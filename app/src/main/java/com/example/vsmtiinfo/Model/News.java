@@ -1,6 +1,9 @@
 package com.example.vsmtiinfo.Model;
 
-public class News {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class News implements Parcelable {
     private String urlToImage;
     private String title;
     private String date;
@@ -14,6 +17,26 @@ public class News {
         this.content = content;
         this.urlToNews = urlToNews;
     }
+
+    protected News(Parcel in) {
+        urlToImage = in.readString();
+        title = in.readString();
+        date = in.readString();
+        content = in.readString();
+        urlToNews = in.readString();
+    }
+
+    public static final Creator<News> CREATOR = new Creator<News>() {
+        @Override
+        public News createFromParcel(Parcel in) {
+            return new News(in);
+        }
+
+        @Override
+        public News[] newArray(int size) {
+            return new News[size];
+        }
+    };
 
     public String getUrlToImage() {
         return urlToImage;
@@ -33,5 +56,19 @@ public class News {
 
     public String getUrlToNews() {
         return urlToNews;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(urlToImage);
+        parcel.writeString(title);
+        parcel.writeString(date);
+        parcel.writeString(content);
+        parcel.writeString(urlToNews);
     }
 }

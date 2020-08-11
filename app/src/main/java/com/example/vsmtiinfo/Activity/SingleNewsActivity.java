@@ -36,15 +36,16 @@ public class SingleNewsActivity extends AppCompatActivity {
     {
         Intent intent = getIntent();
         NewsDetail newsDetail = (NewsDetail) intent.getSerializableExtra("newsDetails");
-
+        String urlToNews = intent.getStringExtra("newsUrl");
         ImageView newsImg = findViewById(R.id.newsContentImg);
 
         if (newsDetail != null) {
-            Picasso.get().load(newsDetail.getUrlToImage()).fit().centerCrop().into(newsImg);
+            Picasso.get().load(newsDetail.getUrlToImage()).into(newsImg);
         }
 
         TextView newsTitle = findViewById(R.id.newsContentTitle);
         TextView newsContent = findViewById(R.id.newsContent);
+        TextView newsUrl = findViewById(R.id.newsUrl);
 
         newsTitle.setText(newsDetail.getNewsTitle());
         String sContent="";
@@ -54,6 +55,6 @@ public class SingleNewsActivity extends AppCompatActivity {
         }
 
         newsContent.setText(sContent);
-
+        newsUrl.setText(urlToNews);
     }
 }

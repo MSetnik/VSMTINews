@@ -41,7 +41,7 @@ public class NewsRecyclerViewAdapter extends RecyclerView.Adapter<NewsRecyclerVi
     public void onBindViewHolder(@NonNull NewsViewHolder holder, int position) {
         News news = lNews.get(position);
 
-        Picasso.get().load(news.getUrlToImage()).fit().into(holder.newsImg);
+        Picasso.get().load(news.getUrlToImage()).into(holder.newsImg);
         holder.newsTitle.setText(news.getTitle());
         holder.newsDate.setText(news.getDate());
         holder.newsContent.setText(news.getContent());

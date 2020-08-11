@@ -3,5 +3,8 @@
     <color name="colorPrimary">#304FFE</color>
     <color name="colorPrimaryDark">#2962FF</color>
     <color name="colorAccent">#0091EA</color>
+    <color name="colorNewsHeader">#86CFFB</color>
     <color name="colorRecyclerBackground">#FFE4E4E4</color>
+    <color name="white">#FFFFFF</color>
+
 </resources>

@@ -1,0 +1,2773 @@
+{
+  "StudijskiProgrami": [
+    {
+      "NazivStudijskogPrograma": "Preddiplomski studij",
+      "StudijskiSmjer": [
+        {
+          "NazivStudijskogSmjera": "Menadžment",
+          "Studij": [
+            {
+              "NazivStudija": "Informatički menadžment",
+              "data": {
+                "Trajanje studija": "Sukladno Bolonjskoj deklaraciji i Zakonu o znanstvenoj djelatnosti i visokom obrazovanju trajanje stručnog studija informatičkog menadžmenta je šest semestara, odnosno tri godine, težina studija je 180 ECTS bodova. Studij će se izvoditi kao redoviti i izvanredni.",
+                "Stručni naziv i akademski stupanj": "Stručni prvostupnik/stručna prvostupnica ekonomije. Baccalaureus/baccalaurea ekonomije (bacc. oec.; b. oec.)",
+                "Kompetencije stečene završetkom studija": [
+                  "1. Ekonomska teorija",
+                  "Stjecanjem kompetencija u ovom području studenti će moći:",
+                  "poznavati i razumjeti odgovarajuće teorije, načela, principe i zakonitosti suvremene ekonomije",
+                  "razlikovati utjecaje pojedinih elemenata tržišta na rezultat poduzeća u modernoj ekonomiji",
+                  "analizirati međuodnos tržišta, odluka i ponašanja poslovnih organizacija.",
+                  "Navedene kompetencije se stječu kroz kolegije: Osnove ekonomije, Ekonomika trgovačkih društava, Matematika",
+                  "2. Menadžerska znanja i vještine",
+                  "Stjecanjem kompetencija u ovom području studenti će moći:",
+                  "razumjeti osnovne pojmove kojima se određuje menadžment, njegovo poimanje i uloga",
+                  "usporediti i razlikovati pristupe i teorije menadžmenta, razine menadžmenta kao i okolinu menadžmenta",
+                  "poznavati ulogu i važnost  funkcija menadžmenta (planiranja, organiziranja, upravljanja ljudskim potencijalima, vođenja i kontrole)  neodvojive od menadžera na svim razinama menadžmenta i u svim organizacijama",
+                  "uočiti izazove modernog menadžmenta povezane sa temama raznolikosti, etike, društvene odgovornosti, svjetskom poslovnom scenom i informacijskom tehnologijom.",
+                  "Navedene kompetencije se stječu kroz kolegije: Menadžment, Poduzetništvo, Poslovna organizacija, Poslovno pregovaranje, Menadžment ljudskih resursa, Upravljanje kvalitetom, Trgovačko pravo, Radno pravo.",
+                  "3. Informacijske tehnologije u suvremenom poslovanju",
+                  "Stjecanjem kompetencija u ovom području studenti će moći:",
+                  "pravilno analizirati temeljne pojmove iz područja informatike",
+                  "razumjeti ulogu i važnost informatike u ekonomiji i društvu",
+                  "koristiti Internet kao računalnu mrežu u svrhu poslovnih aktivnosti",
+                  "razlikovati različite oblike e-biznisa, te znati objasniti njihove karakteristike i namjenu u praktičnoj primjeni",
+                  "razumjeti te izraditi specifikaciju poslovnih aktivnosti/procesa pomoću više grafičkih metoda.",
+                  "Navedene kompetencije se stječu kroz kolegije: Informatika, Građa računala i operacijski sustavi, Osnove programiranja, Računalne mreže, E-Business, Poslovni informacijski sustavi, Baze podataka, Projektiranje i analiza informacijskih sustava.",
+                  "4. Praćenje i analiza okruženja menadžmenta",
+                  "Stjecanjem kompetencija u ovom području studenti će moći:",
+                  "analizirati okruženje menadžmenta, uočiti promjene i prilagoditi poslovanje novonastalim okolnostima",
+                  "istraživati i analizirati tržište za potrebe procjenjivanja konkurentske pozicije, definiranja ključnog tržišnog segmenta i potreba i ponašanja potrošača",
+                  "analizirati i usporediti utjecaj interkulturalizma i nacionalne kulture na funkcije menadžmenta i menadžerske procese.",
+                  "Navedene kompetencije se stječu kroz kolegije: Marketing, Poslovno komuniciranje, Interkulturalni aspekti menadžmenta, Business Intelligence, Završni rad.",
+                  "5. Praćenje profitabilnosti i potreba za financiranjem poslovnih organizacija",
+                  "Stjecanjem kompetencija u ovom području studenti će moći:",
+                  "pratiti, analizirati i planirati troškove poslovanja pojedinih odjela, proizvoda ili usluga",
+                  "koristiti i analizirati financijske izvještaje kao podlogu za donošenje menadžerskih odluka",
+                  "procijeniti financijsku vrijednost poduzeća, analizirati strukturu kapitala i odabrati najpovoljnije izvore financiranja.",
+                  "Navedene kompetencije se stječu kroz kolegije: Financijska matematika, Osnove računovodstva, Financijski menadžment, Poslovna statistika.",
+                  "6. Praksa u informatičkom menadžmentu",
+                  "Stjecanjem kompetencija u ovom području student će moći:",
+                  "sudjelovati u upravljanju poslovnih funkcija na prvoj i srednjoj razini menadžmenta",
+                  "implementirati i upravljati poslovnim informacijskim sustavima",
+                  "voditi informatičke projekte za potrebe malih i srednjih poslovnih organizacija.",
+                  "Navedene kompetencije stječu se kroz kolegije: Menadžment, Menadžment ljudskih resursa,  Poslovna organizacija, Poduzetništvo, Poslovno komuniciranje, Marketing, Upravljanje kvalitetom, Poslovna etika, Interkulturalni aspekti menadžmenta, Trgovačko pravo, Radno pravo, Osnove programiranja, Poslovni informacijski sustavi, Baze podataka, Računalne mreže, Projektiranje i analiza informacijskih sustava, Završni rad.",
+                  "7. Komplementarne vještine",
+                  "Stjecanjem kompetencija u ovom području studenti će moći:",
+                  "učinkovito samostalni i timski djelovati",
+                  "usmeno i u pisanom obliku predstaviti rezultate svog rada",
+                  "učinkovito komunicirati sa svim dionicima u poslovnom okruženju",
+                  "osvijestiti važnost i potrebu poštivanja etičkih normi i etičkog ponašanja u procesu menadžmenta",
+                  "osvijestiti ulogu čovjeka kao važnog čimbenika održivog razvoja",
+                  "osvijestiti potrebu i važnost cjeloživotnog učenja.",
+                  "Navedene kompetencije se stječu kroz kolegije: Poslovni engleski jezik (I, II, III, IV), Poslovni njemački jezik (I, II, III, IV), Poslovne etika, Uvod u metodologiju stručnog i znanstvenog rada, Upravljanje okolišem."
+                ],
+                "Ishodi učenja": [
+                  "Prepoznati i formalnim metodama opisati odvijanja nekog procesa iz stvarnog svijeta.",
+                  "Identificirati trendove u ICT tehnologijama na domaćem i međunarodnom tržištu",
+                  "Razvijati web projekte uz osnovno korištenje elemenata HTML/CSS-a",
+                  "Povezeti strateško poslovno planiranje s planiranjem poslovnih informacijskih sustava",
+                  "Kreirati jednostavne baze podataka",
+                  "Analizirati obilježja računalnih mreža te ustanoviti osnovne komunikacijske protokole",
+                  "Ustanoviti osnovne specifičnosti i potrebe operacijskih sustava Windows/Linux/Unix.",
+                  "Ustanoviti zakonitosti funkcioniranja tržišta i suvremene ekonomije",
+                  "Primijeniti relevantne matematičke i statističke metode u ekonomskoj praksi",
+                  "Upravljati računovodstvenim poslovima i upravljati troškovima",
+                  "Razlikovati i klasificirati financijske izvještaje i postupke financijske kontrole i revizije",
+                  "Procijeniti mogućnosti korištenja i financiranja iz EU fondova",
+                  "Koristiti uredske softverske alata (Office paketi)",
+                  "Preispitati načela održivog razvoja u poslovanju",
+                  "Ustanoviti zakonsku regulativu koja utječe na poslovanje",
+                  "Upravljati ljudskim potencijalima u malim i srednjim poduzećima",
+                  "Ustanoviti specifičnosti financijskih tržišta i institucija",
+                  "Razlikovati alate za strateško planiranje (stablo problema i ciljeva, SWOT analiza)",
+                  "Sastaviti prijedlog istraživačkog procesa za zadani problem",
+                  "Promjeniti vještinu multikulturalturalne komunikacije s poslovnim partnerima i korisnicima na hrvatskom, engleskom i njemačkom jeziku",
+                  "Sastaviti prijedlog marketinškog plana i planova provođenja promotivnih aktivnosti u online i offline okruženju",
+                  "Sastaviti prijedlog poslovnog plana"
+                ],
+                "Predmeti": [
+                  {
+                    "Godina": "1. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "1. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Osnove ekonomije",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 7,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Matematika",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 7,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje okolišem",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 7,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Uvod u metodologiju stručnog i znanstvenog rada",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Informatika",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni engleski/njemački jezik 1",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "2. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Ekonomika trgovačkih društava",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Financijska matematika",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 7,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Trgovačko pravo",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Građa računala i operacijski sustavi",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 8,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni engleski/njemački jezik 2",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Godina": "2. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "3. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Osnove računovodstva",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 7,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Menadžment",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Uvod u ICT tehnologije",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Radno pravo",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovno komuniciranje",
+                            "Predavanja": 15,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Organizaijsko ponašanje",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni engleski/njemački jezik 3",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "4. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Poslovna statistika",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 45,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "E-Business",
+                            "Predavanja": 45,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poduzetništvo",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Marketing",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovna organizacija",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovna etika",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni engleski/njemački jezik 4",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Godina": "3. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "5. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Financijski menadžment",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni informacijski sustavi",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Uvod u baze podataka",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Gospodarstvo Europske unije",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Projektiranje i analiza informacijskih sustava",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Stručna praksa",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 9,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovno pregovaranje",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "6. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Menadžment ljudskih resursa",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Računalne mreže",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Završni rad",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 8,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje kvalitetom",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Interkulturalni aspekti menadžmenta",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Business intelligence",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 15,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "NazivStudija": "Menadžment ruralnog turizma",
+              "data": {
+                "Trajanje studija": "Sukladno Bolonjskoj deklaraciji i Zakonu o znanstvenoj djelatnosti i visokom obrazovanju  preddiplomski stručni studij Menadžment, smjer Menadžment ruralnog turizma traje tri godine odnosno šest semestra. Težina studija iznosi 180 ECTS bodova.",
+                "Stručni naziv i akademski stupanj": "Završetkom preddiplomskog stručnog studija Menadžment, smjer Menadžment ruralnog turizma polaznik stječe akademski stručni naziv i akademski stupanj: STRUČNI PRVOSTUPNIK/PRVOSTUPNICA EKONOMIJE (bacc.oec.)",
+                "Kompetencije stečene završetkom studija": [
+                  "1. TEMELJNE KOMPETENCIJE:",
+                  "Poznavanje zakonitosti funkcioniranja tržišta",
+                  "Upravljanje računovodstvenim poslovima, budžetiranjem te upravljanje troškovima",
+                  "Razumijevanje, razlikovanje i klasificiranje financijskih izvještaja te postupaka financijske kontrole i revizije",
+                  "Poznavanje trendova te kretanja domaćeg i međunarodnog turističkog tržišta",
+                  "Poznavanje rada na računalu i korištenje uredskih softverskih alata (Office paketi)",
+                  "Uvažavanje načela održivog razvoja u provedbi turističkih aktivnosti",
+                  "Poznavanje zakonske regulative koja utječe na poslovanje u turizmu",
+                  "Poznavanje mogućnosti financiranja turizma iz fondova EU i drugih fondova",
+                  "2. SPECIFIČNE PROFESIONALNE KOMPETENCIJE:",
+                  "Identificiranje činitelja razvoja ruralnog i drugih oblika turizma",
+                  "Izrađivanje turističke atrakcijske osnove posebnih oblika turizma",
+                  "Planiranje turizma u skladu s načelima održivog razvoja",
+                  "Poznavanje obilježja turističkog tržišta i ponašanja potrošača u turizmu",
+                  "Poznavanje mogućnosti i korištenje marketinga u e-okruženje",
+                  "Upravljanje integriranim turističkim proizvodima",
+                  "Upravljanje pojedinim odjelima i turističko-ugostiteljskim subjekatima u cjelini",
+                  "Prilagođavanje poslovanja trendovima pojedinih oblika turizma",
+                  "Njegovanje i promoviranje autohtonih te osmišljavanje novih proizvoda ruralnih prostora",
+                  "Stvaranje dorađenih turističkih sadržaja temeljem postojeće resursne osnove u destinaciji",
+                  "Korištenje komunikacijske platforme na Internetu i ostalih ICT alata",
+                  "Kreiranje paket-aranžmana",
+                  "3. METODOLOŠKE KOMPETENCIJE:",
+                  "Izrađivanje poslovnog plana za novi proizvod",
+                  "Korištenje alata za strateško planiranje (stablo problema i ciljeva, SWOT analiza)",
+                  "Kreiranje marketinškog plana u turizmu uključujući i planove provođenja promotivnih aktivnosti",
+                  "Kreiranje i upravljanje projektima u turizmu",
+                  "Praćenje konkurencije te istraživanje i segmentiranje turističkog tržišta",
+                  "4. INTERDISCIPLINARNE KOMPETENCIJE:",
+                  "Primijena vještina uspješnog prezentiranja",
+                  "Primijena vještina ophođenja s turistima i poslovnim partnerima",
+                  "Koordiniranje radom u skladu s propisima o sigurnosti, zaštiti zdravlja i očuvanju okoliša",
+                  "Primjena interkulturalne komunikacije u provođenju turističkih aktivnosti"
+                ],
+                "Ishodi učenja": [
+                  "Identificirati činitelje razvoja posebnih oblika turizma",
+                  "Izraditi turističku atrakcijsku osnovu",
+                  "Ustanoviti obilježja turističkog tržišta i ponašanja potrošača u turizmu",
+                  "Upravljati poslovnim funkcijama destinacijskog menadžmenta",
+                  "Upravljati poslovnim procesima pojedinih odjela i turističko-ugostiteljskog subjekta u cjelini",
+                  "Razviti nove turističke proizvode i sadržaje",
+                  "Upravljati procesima u području gastronomije, enologije i posluživanja",
+                  "Ustanoviti zakonitosti funkcioniranja tržišta i suvremene ekonomije",
+                  "Primijeniti relevantne matematičke i statističke metode u ekonomskoj praksi",
+                  "Upravljati računovodstvenim poslovima i upravljati troškovima",
+                  "Razlikovati i klasificirati financijske izvještaje i postupke financijske kontrole i revizije",
+                  "Procijeniti mogućnosti korištenja i financiranja iz EU fondova",
+                  "Koristiti uredske softverske alata (Office paketi)",
+                  "Preispitati načela održivog razvoja u poslovanju",
+                  "Ustanoviti zakonsku regulativu koja utječe na poslovanje",
+                  "Upravljati ljudskim potencijalima u malim i srednjim poduzećima",
+                  "Ustanoviti specifičnosti financijskih tržišta i institucija",
+                  "Razlikovati alate za strateško planiranje (stablo problema i ciljeva, SWOT analiza)",
+                  "Sastaviti prijedlog istraživačkog procesa za zadani problem",
+                  "Promjeniti vještinu multikulturalturalne komunikacije s poslovnim partnerima i korisnicima na hrvatskom, engleskom i njemačkom jeziku",
+                  "Sastaviti prijedlog marketinškog plana i planova provođenja promotivnih aktivnosti u online i offline okruženju",
+                  "Sastaviti prijedlog poslovnog plana"
+                ],
+                "Predmeti": [
+                  {
+                    "Godina": "1. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "1. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Mikroekonomija",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Gospodarska Matematika",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 7,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Uvod u metodologiju stručnog i znanstvenog rada",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Pravo u turizmu",
+                            "Predavanja": 15,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni odnosi u ruralnom turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Turistička atrakcijska osnova",
+                            "Predavanja": 15,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 2,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Engleski jezik 1",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 2,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "2. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Osnove informatike",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Primjenjena statistika u turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Turizam i održivi razvoj",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Specifični oblici ruralnog turizma",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poduzetništvo u ruralnom turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Komunikacija i multidisciplinaran pristup gostu",
+                            "Predavanja": 15,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Engleski jezik 2",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 2,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Godina": "2. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "3. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Upravljanje EU projektima",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Računovodstvo u turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Marketing u turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 22,
+                            "Vježbe": 8,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Enogastronomija",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Engleski jezik 3",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 2,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Riječni turizam",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Cikloturizam",
+                            "Predavanja": 15,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove zakonodavstva EU",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "4. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Promocija u ruralnom turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 45,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovanje turističko-ugostiteljskih subjekata u ruralnom turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje vremenom gostiju",
+                            "Predavanja": 15,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Engleski jezik 4",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 2,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Njemački jezik 1",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 60,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Ruralni turizam i prirodna baština",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Sociologija u ruralnom turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Ruralni turizam i kulturna baština",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Godina": "3. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "5. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "e-Marketing u turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje ruralnom turističkom destinacijom",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovanje turističkih agencija",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Engleski jezik 5",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 2,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Njemački jezik 2",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 60,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje ljudskim resursima",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni informacijski sustavi u turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje financijama i investicijsko planiranje",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje turističkim događajima",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "6. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Engleski jezik 6",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 2,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Njemački jezik 3",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 60,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Završni rad",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 10,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Stručna praksa",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 8,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Agroturizam",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje kvalitetom u ruralnom turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Interkulturalne sastavnice turizma",
+                            "Predavanja": 15,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "NazivStudijskogSmjera": "Poduzetništvo",
+          "Studij": [
+            {
+              "NazivStudija": "Poduzetništvo",
+              "data": {
+                "Trajanje studija": "Preddiplomski stručni studij Poduzetništvo, smjer Poduzetništvo traje šest semestra. Težina preddiplomskog stručnog studija Poduzetništvo, smjer Poduzetništvo iznosi 180 ECTS kreditnih bodova u što je uključena stručna praksa i izrada završnog rada.",
+                "Stručni naziv i akademski stupanj": "Završetkom preddiplomskog stručnog studija Poduzetništvo, smjer Poduzetništvo polaznik stječe akademski stručni naziv i akademski stupanj: STRUČNI PRVOSTUPNIK EKONOMIJE (bacc.oec.) / STRUČNA PRVOSTUPNICA EKONOMIJE (bacc.oec.)",
+                "Kompetencije stečene završetkom studija": [
+                  "1. TEMELJNE KOMPETENCIJE:",
+                  "Poznavanje osnovnih načela funkcioniranja tržišta, ponašanja tvrtki i industrijskih organizacija",
+                  "Poznavanje trendova te kretanja domaćeg i međunarodnog tržišta",
+                  "Poznavanje rada na računalu i korištenje uredskih softverskih alata",
+                  "Poznavanje zakonske regulative koja utječe na poslovanje poduzetnika",
+                  "Uvažavanje načela održivog razvoja u poslovanju",
+                  "Poznavanje mogućnosti financiranja poslovnih projekata iz fondova EU i drugih fondova",
+                  "2. SPECIFIČNE PROFESIONALNE KOMPETENCIJE:",
+                  "Poznavanje mogućnosti pokretanja poduzetničkog poduhvata, kreiranja poslovne ideje te različitih opcija ulaska u poduzetništvo",
+                  "Korištenje različitih metoda razvoja proizvoda i usluga u pripadajućoj djelatnosti",
+                  "Upravljanje računovodstvenim poslovima te upravljanje troškovima",
+                  "Razumijevanje, razlikovanje i klasificiranje financijskih izvještaja te postupaka financijske kontrole i revizije",
+                  "Poznavanje mogućnosti i primjena marketing koncepcije u ofline i online okruženju",
+                  "Upravljanje ljudskim potencijalima u malim i srednjim poduzećima",
+                  "3. METODOLOŠKE KOMPETENCIJE:",
+                  "Korištenje alata za strateško planiranje (stablo problema i ciljeva, SWOT analiza)",
+                  "Poznavanje i primjena metodologije istraživanja tržišta",
+                  "Generiranje poslovnih (poduzentničkih) ideja odnosno projekta",
+                  "Primjena PCM metodologije izrade projekata",
+                  "4. INTERDISCIPLINARNE KOMPETENCIJE:",
+                  "Primijena vještina uspješnog prezentiranja",
+                  "Primijena vještina ophođenja s poslovnim partnerima i korisnicima",
+                  "Primjena interkulturalne komunikacije u provođenju poslovnih aktivnosti"
+                ],
+                "Ishodi učenja": [
+                  "Ustanoviti osnovne principe i zakonitosti suvremene ekonomije, načela funkcioniranja tržišta, ponašanja tvrtki i industrijskih organizacija",
+                  "Poznavati rad na računalu i koristiti uredske softverske alata",
+                  "Procijeniti zakonsku regulativu koja utječe na poslovanje poduzetnika",
+                  "Preispitati načela održivog razvoja u poslovanju",
+                  "Sastaviti prijedlog pokretanja poduzetničkog poduhvata, kreiranja poslovne ideje te različitih opcija ulaska u poduzetništvo",
+                  "Upravljati računovodstvenim poslovima i upravljati troškovima",
+                  "Razlikovati i klasificirati financijske izvještaje i postupke financijske kontrole i revizije",
+                  "Upravljati marketingom u offline i online okruženju",
+                  "Upravljati ljudskim potencijalima u malim i srednjim poduzećima",
+                  "Razlikovati alate za strateško planiranje (stablo problema i ciljeva, SWOT analiza)",
+                  "Sastaviti prijedlog istraživačkog procesa za zadani problem",
+                  "Generirati poslovne (poduzetničke) ideje",
+                  "Primijeniti PCM metodologije u provedbi projekata",
+                  "Razviti prezentacijske vještine",
+                  "Primijeniti vještinu multikulturalturalne komunikacije s poslovnim partnerima i korisnicima na hrvatskom i engleskom jeziku",
+                  "Ustanoviti specifičnosti financijskih tržišta i institucija",
+                  "Primijeniti relevantne matematičke i statističkih metode u ekonomskoj praksi"
+                ],
+                "Predmeti": [
+                  {
+                    "Godina": "1. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "1. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Osnove ekonomije",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 7,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Primjena matematike u ekonomiji",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Pravo za poduzetnike",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje okolišem i održivi razvoj",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Uvod u metodologiju stručnog i znanstvenog rada",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni engleski jezik 1",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "2. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Ekonomika poduzetništva",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Gospodarska matematika",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove poduzetništva",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovna informatika",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovna statistika",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 45,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni engleski jezik 2",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Godina": "2. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "3. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Makroekonomija",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove računovodstva",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove menadžmenta",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovna komunikacija i poslovni hrvatski jezik",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Inovativnost i kreativnost u poduzetništvu",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni engleski jezik 3",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "4. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Osnove marketinga",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Logistika u poduzetništvu",
+                            "Predavanja": 45,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Komunikacijske i prezentacijske vještine",
+                            "Predavanja": 15,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Porezni sustav",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni engleski jezik 4",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Gospodarstvo Hrvatske",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje rizikom",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Ruralni turizam i kulturna baština",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje kvalitetom",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni njemački jezik 1",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Godina": "3. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "5. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Poslovne financije",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje projektnim ciklusom",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje malim i srednjim poduzećima",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Uvod u Europsku uniju",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje javnim i neprofitnim sektorom",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Organizacijsko ponašanje",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Ponašanje potrošača",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove e-marketinga",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni njemački jezik II",
+                            "Predavanja": 15,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "6. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Menadžment ljudskih potencijala",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Stručna praksa",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 8,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Završni rad",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje EU projektima",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Globalne financije",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Interkulturalni aspekti poduzetništva",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni njemački jezik 3",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Promocija",
+                            "Predavanja": 15,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "NazivStudijskogSmjera": "Računarstvo",
+          "Studij": [
+            {
+              "NazivStudija": "Programsko inženjerstvo",
+              "data": {
+                "Trajanje studija": "Preddiplomski stručni studij Računarstvo, smjer Programsko inženjerstvo traje šest semestra. Težina preddiplomskog stručnog studija Računarstvo, smjer Programsko inženjerstvo iznosi 180 ECTS kreditnih bodova u što je uključena stručna praksa i izrada završnog rada.",
+                "Stručni naziv i akademski stupanj": "Završetkom preddiplomskog stručnog studija Računarstva, polaznik stječe akademski stručni naziv i akademski stupanj: Stručni prvostupnik inženjer računarstva / Stručna prvostupnica inženjerka računarstva - BACCALAUREUS/BACCALAUREA RAČUNARSTVA (bacc. ing. comp.)",
+                "Kompetencije stečene završetkom studija": [
+                  "1. TEMELJNE KOMPETENCIJE:",
+                  "Na praktičan način primjenjivati u programskom inženjerstvu relevantne matematičke modele.",
+                  "Služiti se engleskim jezikom u domeni ICT",
+                  "Poznavati osnovna počela ICT tehnologija",
+                  "Prilagodljivost novim tehnologijama",
+                  "Poznavati osnovne specifičnosti operacijskih sustava Windows/Linux/Unix",
+                  "Specificirati i opisivati procese iz realnog svijeta korištenjem formalnih metoda",
+                  "Procijeniti optimalnu programsku tehnologiju za rješavanje određenog problema",
+                  "Poznavati osnove računalnih mreža, osnovne komunikacijske protokole kao i protokolni složaj Internet mreže",
+                  "Poznavati osnove baza podataka: kreiranje, modeliranje, administriranje",
+                  "Ocijeniti prednosti otvaranja vlastitog obrta u odnosu na društvo s ograničenom odgovornošću",
+                  "Poznavati osnovna počela tehničkih sustava",
+                  "2. SPECIFIČNE PROFESIONALNE KOMPETENCIJE:",
+                  "Suvereno koristiti osnovne naredbe za kontrolu tijeka programa barem u jednom programskom jeziku",
+                  "Poznavati načine strukturiranja podataka u programskom kodu, kao i tehnike zapisivanja složenih programskih formi (XML, json) te koristiti standardne algoritme",
+                  "Kreirati programske objekte koji opisuju objekte iz realnog svijeta",
+                  "Koristiti suvereno prevoditelj generacije MS Visual Studio, te poznavati.NET okolinu",
+                  "Pravilno procijeniti koji programski jezik odnosno tehnologiju iz MS Visual Studio alata primijeniti za određeni problem",
+                  "Razvijati barem jedan tip Windows aplikacije: Windows service, Windows form ili console application.",
+                  "Razvijati web projekte, koji će u sebi uključivati barem četiri od sljedećih komponenti: Napredno korištenje CSS-a, PHP, Javascript, Web servisi, MVCO/MVVM/MVW framework (npr. AnguralJS), Agilne razvojne metodologije, CMS, programsko povezivanje s bazama podataka",
+                  "Razvijati mobilne aplikacije na barem jednoj platformi zajedno s podizanjem na store",
+                  "Sva stečena znanja na pravilan način moći iskoristiti i kombinirati prilikom izrade složenijeg informacijskog sustava",
+                  "3. METODOLOŠKE KOMPETENCIJE:",
+                  "Detaljno poznavanje metodologije vođenja projekta u struci.",
+                  "Analizirati potrebe korisnika (istražiti i detektirati izvore podataka, trenutno pristune poslovne sustave, potrebe korisnika, tehnološka ograničenja, sepecifičnosti poslovnog okruženja)",
+                  "Identificirati trendove u ICT tehnologijama na domaćem i međunarodnom tržištu",
+                  "Izraditi marketinški plan te poslovne planove na razini organizacije",
+                  "4. INTERDISCIPLINARNE KOMPETENCIJE:",
+                  "Komunicirati sa suradnicima i korisnicima usluga",
+                  "Koordinirati sve poslovne aktivnosti, upravljati projektima"
+                ],
+                "Ishodi učenja": [
+                  "Primjeniti relevantne matemetičke modele u programskom inženjerstvu na praktičan način.",
+                  "Ustanoviti osnovne specifičnosti i potrebe operacijskih sustava Windows/Linux/Unix.",
+                  "Prepoznati i formalnim metodama opisati odvijanja nekog procesa iz stvarnog svijeta",
+                  "Procjeniti odgovarajuću programsku tehnologiju za rješavanje određenog problema.",
+                  "Poznavati osnove računalnih mreža, osnovne komunikacijske protokole kao i protokolni složaj Internet mreže",
+                  "Poznavati osnove baza podataka: kreiranje, modeliranje, administriranje",
+                  "Ocijeniti prednosti otvaranja vlastitog obrta u odnosu na društvo s ograničenom odgovornošću",
+                  "Prepoznati osnovne elemente tehničkog sustava na primjeru",
+                  "Primijeniti metode za opis algoritma na primjeru problema iz stvarnog svijeta.",
+                  "Kreirati programske objekte koji opisuju objekte iz realnog svijeta",
+                  "Procijeniti koji programski jezik odnosno tehnologiju iz MS Visual Studio alata primijeniti za određeni problem",
+                  "Analizirati pojam sigurnosti na primjerima informacijskih sustava",
+                  "Primijeniti PCM metodologije u provedbi projekata",
+                  "Razvijati web projekte, koji će u sebi uključivati minimalno četiri komponenti od navedenih (napredno korištenje css-a, PHP, javascript, web servis, MVC/MVVM/MVW framework (npr. AngularJS), Node.js, agilne razvojne",
+                  "tehnlogije, CMS, programsko povezivanje s bazama podataka",
+                  "Razvijati mobilne aplikacije na barem jednoj platformi zajedno s podizanjem na store",
+                  "Analizirati potrebe korisnika (istražiti i detektirati izvore podataka, trenutno pristune poslovne sustave, potrebe korisnika, tehnološka ograničenja, sepecifičnosti poslovnog okruženja)",
+                  "Identificirati trendove u ICT tehnologijama na domaćem i međunarodnom tržištu",
+                  "Komunicirati sa suradnicima i korisnicima usluga na hrvatskom i engleskom jeziku"
+                ],
+                "Predmeti": [
+                  {
+                    "Godina": "1. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "1. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Matematika",
+                            "Predavanja": 30,
+                            "Laboratorijske vježbe": 30,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Računalni engleski jezik 1",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 30,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Uvod u ICT tehnologije",
+                            "Predavanja": 30,
+                            "Laboratorijske vježbe": 0,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Algoritmi i strukture podataka",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 30,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove programiranja",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 45,
+                            "ECTS": 9,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "2. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Numerička matematika",
+                            "Predavanja": 30,
+                            "Laboratorijske vježbe": 30,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Računalni engleski jezik 2",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 30,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Formalne metode specifikacije",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 30,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Računalne mreže i mrežne usluge",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 30,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Objektno-orijentirano programiranje",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 30,
+                            "ECTS": 9,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Godina": "2. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "3. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Baze podataka",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 30,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove tehničkih sustava",
+                            "Predavanja": 30,
+                            "Laboratorijske vježbe": 0,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Ekonomika startup poduzeća",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Programiranje u .NET okolini",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 30,
+                            "ECTS": 9,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove web programiranja",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 45,
+                            "ECTS": 9,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "4. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Operacijski sustavi",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 30,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Web programiranje na strani poslužitelja",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 30,
+                            "ECTS": 9,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Skriptni programski jezici",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 30,
+                            "ECTS": 9,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Mrežno programiranje",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Integracija računala i telefonije",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje projektima",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Vjerojatnost i statistika",
+                            "Predavanja": 30,
+                            "Laboratorijske vježbe": 30,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Godina": "3. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "5. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Stručna praksa",
+                            "Predavanja": 0,
+                            "Laboratorijske vježbe": 0,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 9,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "CMS sustavi",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 30,
+                            "ECTS": 9,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Programiranje mobilnih aplikacija",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 30,
+                            "ECTS": 9,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "E-learning",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Digitalizacija i e-prikaz dokumenta",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "6. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Sigurnost informacijskih sustava",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Projektiranje informacijskih sustava",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 30,
+                            "ECTS": 9,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Završni rad",
+                            "Predavanja": 0,
+                            "Laboratorijske vježbe": 0,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 12,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "IT sustavi u oblaku",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Multimedijski sustavi",
+                            "Predavanja": 15,
+                            "Laboratorijske vježbe": 15,
+                            "Konstrukcijske vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "NazivStudijskogSmjera": "Elektrotehnika",
+          "Studij": [
+            {
+              "NazivStudija": "Telekomunikacije i informatika",
+              "data": {
+                "Trajanje studija": "Preddiplomski stručni studij Elektrotehnike, smjer Telekomunikacije i informatika traje šest semestra. Težina preddiplomskog stručnog studija Elektrotehnike, smjer Telekomunikacije i informatika iznosi 180 ECTS kreditnih bodova u što je uključena stručna praksa i izrada završnog rada.",
+                "Stručni naziv i akademski stupanj": "Završetkom preddiplomskog stručnog studija Elektrotehnike, smjer Telekomunikacije i informatika polaznik stječe akademski stručni naziv i akademski stupanj: STRUČNI PRVOSTUPNIK INŽENJER ELEKTROTEHNIKE (bacc.ing.el.) / STRUČNA PRVOSTUPNICA INŽENJERKA ELEKTROTEHNIKE (bacc.ing.el.)",
+                "Kompetencije stečene završetkom studija": [
+                  "1. TEMELJNE KOMPETENCIJE:",
+                  "Na praktičan način primjenjivati u elektrotehnici relevantne matematičke modele",
+                  "Služiti se engleskim jezikom u domeni ICT",
+                  "Poznavati osnovna počela ICT tehnologija",
+                  "Poznavati osnove elektroničkih komponenti i sklopova",
+                  "Poznavati osnove računalnih mreža, osnovne komunikacijske protokole kao i protokolni položaj Internet mreže",
+                  "Poznavati „klasičnu“ telekomunikacijsku mrežu, mobilne mreže i bežične mreže",
+                  "Poznavati metode prijenosa podataka i govora gledano sa signalnog stanovišta (uzorkovanje)",
+                  "Prilagodljivost novim tehnologijama",
+                  "Poznavati osnovne specifičnosti operacijskih sustava Windows/Linux/Unix",
+                  "Poznavati osnove baza podataka: kreiranje, modeliranje, administriranje",
+                  "Projektirati komunikacijske mreže",
+                  "Ocijeniti prednosti otvaranja vlastitog obrta u odnosu na društvo s ograničenom odgovornošću",
+                  "Poznavati osnovna počela tehničkih sustava",
+                  "2. SPECIFIČNE PROFESIONALNE KOMPETENCIJE:",
+                  "Koristiti matematičke i fizikalne modele kod rješavanja konkretnih problema u domeni elektrotehnike",
+                  "Suvereno poznavati i konfigurirati osnovnu komunikacijsku opremu u lokalnim mrežama (switch, router)",
+                  "Projektirati lokalne računalne mreže poštujući potrebe korisnika",
+                  "Dograđivati postojeće lokalne računalne mreže uzimajući u obzir trenutno stanje i potrebe korisnika",
+                  "Koristiti alate za nadzor mreže te poznavati pojmove i tehnike kod upravljanja mrežom",
+                  "Poznavati protokole prijenosa podataka u lokalnim računalnim mrežama te mogućnosti njihove analize u realnoj mreži",
+                  "Poznavati metode simulacije računalnih mreža te ih koristiti za rješavanje konkretnih problema",
+                  "Suvereno projektirati i kreirati bazu podataka na nekom RDBMS (npr. MSSQL server, ORACLE, MS Access i sl.)",
+                  "Konfigurirati osnovne elemente Windows te Unix/Linux OS-a",
+                  "Administrirati baze podataka te koristiti elemente SQL jezika",
+                  "Izraditi jednostavan web projekt",
+                  "Napisati jednostavan program u programskom jeziku C/C++/C#",
+                  "Sva stečena znanja na pravilan način moći iskoristiti i kombinirati prilikom projektiranja složenije komunikacijske mreže",
+                  "3. METODOLOŠKE KOMPETENCIJE:",
+                  "Detaljno poznavanje metodologije vođenja projekta u struci.",
+                  "Analizirati potrebe korisnika (istražiti i detektirati potrebe korisnika, trenutno pristune komponente komunikacijske mreže, razmotriti tehnološka ograničenja, specifičnosti prostora i poslovnog okruženja)",
+                  "Identificirati trendove u ICT tehnologijama, s posebnim naglaskom na komunikacijske tehnologije, na domaćem i međunarodnom tržištu",
+                  "4. INTERDISCIPLINARNE KOMPETENCIJE:",
+                  "Komunicirati sa suradnicima i korisnicima usluga",
+                  "Koordinirati sve poslovne aktivnosti, upravljati projektima"
+                ],
+                "Ishodi učenja": [
+                  "Primijeniti relevantne matematičke modele u elektrotehnici na praktičan način.",
+                  "Identificirati trendove u ICT tehnologijama, s posebnim naglaskom na komunikacijske tehnologije, na domaćem i međunarodnom tržištu.",
+                  "Interpretirati osnove elektroničkih komponenti i sklopova.",
+                  "Interpretirati osnove računalnih mreža, osnovne komunikacijske protokole kao i protokolni složaj Internet mreže.",
+                  "Poznavati „klasičnu“ telekomunikacijsku mrežu, mobilne mreže i bežične mreže",
+                  "Ustanoviti osnovne specifičnosti i potrebe operacijskih sustava Windows/Linux/Unix.",
+                  "Primijeniti osnove baza podataka i SQL jezika kroz kreiranje, modeliranje, administriranje",
+                  "Interpretirati osnovne principe projektiranja komunikacijske mreže.",
+                  "Ocijeniti prednosti otvaranja vlastitog obrta u odnosu na društvo s ograničenom odgovornošću.",
+                  "Prepoznati osnovne elemente tehničkog sustava na primjeru.",
+                  "Koristiti fizikalne modele kod rješavanja konkretnih problema u domeni elektrotehnike.",
+                  "Koristiti alate za nadzor mreže te poznavati pojmove i tehnike kod upravljanja mrežom.",
+                  "Razvijati jednostavne web projekte, koji će u sebi uključivati osnovo znanje HTML, CSS, PHP, Javascript programskim jezicima.",
+                  "Procijeniti koji programski jezik odnosno tehnologiju iz MS Visual Studio alata primijeniti za određeni problem.",
+                  "Analizirati potrebe korisnika (istražiti i detektirati potrebe korisnika, trenutno prisutne komponente komunikacijske mreže, razmotriti tehnološka ograničenja, specifičnosti prostora, poslovnog okruženja i mogućnosti nadogradnje).",
+                  "Komunicirati sa suradnicima i korisnicima usluga na hrvatskom i engleskom jeziku.",
+                  "Analizirati pojam sigurnosti na primjerima komunikacijskih tehnologija.",
+                  "Poznavati paradigmu računarstva u oblaku.",
+                  "Ustanoviti mogućnosti prijenosa podataka bežičnim putem."
+                ],
+                "Predmeti": [
+                  {
+                    "Godina": "1. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "1. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Matematika 1",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Računalni engleski jezik 1",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove tehničkih sustava",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove primjene računala",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Fizika",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove elektrotehnike",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "2. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Matematika 2",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Računalni engleski jezik 2",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Ekonomika startup poduzeća",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove elektronike",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Signali i sustavi prijenosa",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Građa računala",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Godina": "2. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "3. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Računalne mreže",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Digitalna elektronika",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Multimedijski sustavi",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Baze podataka",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove programiranja",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "4. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Operacijski sustavi",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Telekomunikacijske mreže",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "IT sustavi u oblaku",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Programiranje u .NET okolini",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 45,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Digitalizacija i e-prikaz dokumenata",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "E-learning",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Vjerojatnost i statistika",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Godina": "3. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "5. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Bežične komunikacije",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Projektiranje komunikacijskih mreža",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Osnove web programiranja",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 45,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Stručna praksa",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 12,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Mrežno programiranje",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Bežične senzorske mreže",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 3,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "6. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Sigurnost informacijskih sustava",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje telekomunikacijskom mrežom",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Završni rad",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 12,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Uvod u robotiku",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Internet stvari (Internet Of Things)",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Usluge zasnovane na lokaciji",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "NazivStudijskogPrograma": "Diplomski studij",
+      "StudijskiSmjer": [
+        {
+          "NazivStudijskogSmjera": "Menadžment",
+          "Studij": [
+            {
+              "NazivStudija": "Destinacijski menadžment",
+              "data": {
+                "Trajanje studija": "Sukladno Bolonjskoj deklaraciji i Zakonu o znanstvenoj djelatnosti i visokom obrazovanju trajanje specijalističkog diplomskog stručnog studija Menadžmenta je četiri semestra, odnosno dvije godine, težina studija je 120 ECTS bodova. Studij će se izvoditi kao redoviti i izvanredni.",
+                "Stručni naziv i akademski stupanj": "Stručni specijalist / stručna specijalistica ekonomije ( struc.spec.oec. )",
+                "Kompetencije stečene završetkom studija": [
+                  "1. TEMELJNE KOMPETENCIJE",
+                  "Procijeniti konkurentsku poziciju, osmisliti misiju, viziju i strateške ciljeve poduzeća",
+                  "Upravljati poduzetničkim projektima",
+                  "Poznavati elemente financijskog poslovanja, temeljne pojmove, sadržaj i važnost menadžerskog računovodstva",
+                  "Analizirati financijske planove i financijske izvještaje, pratiti financijske rezultate, upravljati financijskim i investicijskim rizicima",
+                  "Provoditi istraživanja tržišta u poslovnom odlučivanju",
+                  "Kreirati i provoditi marketinške aktivnosti, primijeniti elemente promotivnog mixa, komunicirati s medijima",
+                  "2. SPECIFIČNE PROFESIONALNE KOMPETENCIJE",
+                  "Izraditi turističku atrakcijsku osnovu",
+                  "Primjenjivati pravila planiranja održivog razvoja turizma",
+                  "Primjenjivati temeljne odrednice turističke politike",
+                  "Kreirati i razvijati nove proizvode unutar određene turističke destinacije",
+                  "Provoditi strateško planiranje u turizmu",
+                  "Upravljati integriranim turističkim proizvodima",
+                  "Koristiti komunikacijske platforme na internetu i ostale ICT alate,",
+                  "Razumjeti i primjenjivati poslovne aplikacije",
+                  "Upravljati marketingom turističke destinacije",
+                  "Poznavati zakonitosti turističke politike i organizaciju turizma",
+                  "Upravljati i koordinirati prodajnim aktivnostima (poznavati tržište, konkurenciju, trendove)",
+                  "3. METODOLOŠKE KOMPETENCIJE",
+                  "Identificirati trendove na domaćem i međunarodnom tržištu",
+                  "Analizirati potrebe korisnika (istraživati turističko tržište, anketirati korisnike/potrošače)",
+                  "Izraditi strateške dokumente (poznavati alate za strateško planiranje (stablo problema i ciljeva, SWOT)",
+                  "Izraditi marketinški plan",
+                  "Izraditi poslovne planove na razini organizacije",
+                  "Izraditi i voditi poduzetničke (i infrastrukturne) projekte",
+                  "4. INTERDISCIPLINARNE KOMPETENCIJE",
+                  "Komunicirati sa suradnicima i korisnicima usluga",
+                  "Koordinirati sve poslovne aktivnosti u skladu s propisima o očuvanju okoliša"
+                ],
+                "Ishodi učenja": [
+                  "Preporučiti poslovnu strategiju malih i srednjih poduzeća",
+                  "Preispitati elemente financijskog poslovanja, temeljne pojmove, sadržaj i važnost menadžerskog računovodstva",
+                  "Analizirati financijske planove i financijske izvještaje, pratiti financijske rezultate, upravljati financijskim i investicijskim rizicima",
+                  "Provesti istraživanja tržišta u poslovnom odlučivanju",
+                  "Preporučiti primjeren marketinški program",
+                  "Predvidjeti trendove na domaćem i međunarodnom tržištu",
+                  "Kreirati strateške marketinške dokumente",
+                  "Kreirati i upravljati poduzetničkim (i infrastrukturnim) projektima",
+                  "Utvrditi odgovarajuće komunikacijske tehnike u određenoj situaciji",
+                  "Koordinirati sve poslovne aktivnosti u skladu s propisima o očuvanju okoliša",
+                  "Preporučiti alate menadžerskog računovodstva za procjenu troškova poduzeća",
+                  "Kreirati i razvijati nove proizvode unutar određene turističke destinacije uvažavajući načela održivog razvoja turizma",
+                  "Preporučiti odgovarajući način upravljanja integriranim turističkim proizvodima",
+                  "Koristiti komunikacijske platforme na internetu i ostale ICT alate",
+                  "Preispitati zakonitosti turističke politike i organizaciju turizma",
+                  "Upravljati i koordinirati prodajnim aktivnostima (poznavati tržište, konkurenciju, trendove)",
+                  "Vrednovati integrirane sustave upravljanja u poslovnom okruženju na praktičnim primjerima",
+                  "Utvrditi osnovna obilježja akademskog stila i jezika pisanja"
+                ],
+                "Predmeti": [
+                  {
+                    "Godina": "1. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "1. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Specifični oblici turizma",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Planiranje održivog razvoja turizma",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Menadžersko računovodstvo",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Istraživanje tržišta",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 15,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje integralnim turističkim proizvodom",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "2. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Strateški menadžment",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Marketing turističke destinacije",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Ekonomija doživljaja i turizam",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Interkulturalna komunikacija u turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Stručna praksa",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Godina": "2. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "3. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Turistička politika i organizacija turizma",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Brendiranje turističke destinacije",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Prodajno poslovanje u turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Investicijski menadžment u turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni engleski jezik u turizmu 1",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Interesna udruživanja u turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Turizam temeljen na prirodi",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "MICE turizam",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "4. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Integrirani sustavi upravljanja",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Metodologija izrade diplomskog rada",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 1,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Stručna praksa",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Diplomski rad",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 10,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni engleski jezik u turizmu 2",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Elektroničko poslovanje u turizmu",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Kulturni turizam",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Zdravstveni i wellness turizam",
+                            "Predavanja": 15,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "NazivStudija": "Menadžment malih i srednjih poduzeća",
+              "data": {
+                "Trajanje studija": "Sukladno Bolonjskoj deklaraciji i Zakonu o znanstvenoj djelatnosti i visokom obrazovanju trajanje specijalističkog diplomskog stručnog studija Menadžmenta je četiri semestra, odnosno dvije godine, težina studija je 120 ECTS bodova. Studij će se izvoditi kao redoviti i izvanredni.",
+                "Stručni naziv i akademski stupanj": "Stručni specijalist / stručna specijalistica ekonomije ( struc.spec.oec. )",
+                "Kompetencije stečene završetkom studija": [
+                  "1. TEMELJNE KOMPETENCIJE",
+                  "Procijeniti konkurentsku poziciju, osmisliti misiju, viziju i strateške ciljeve poduzeća",
+                  "Upravljati poduzetničkim projektima",
+                  "Poznavati elemente financijskog poslovanja, temeljne pojmove, sadržaj i važnost menadžerskog računovodstva",
+                  "Analizirati financijske planove i financijske izvještaje, pratiti financijske rezultate, upravljati financijskim i investicijskim rizicima",
+                  "Provoditi istraživanja tržišta u poslovnom odlučivanju",
+                  "Kreirati i provoditi marketinške aktivnosti, primijeniti elemente promotivnog mixa, komunicirati s medijima",
+                  "Ocijeniti učinke globalizacije na male ekonomije",
+                  "2. SPECIFIČNE PROFESIONALNE KOMPETENCIJE",
+                  "Poznavati temeljne koncepte suvremene teorije menadžmenta",
+                  "Provoditi analizu okoline i procjene konkurentske pozicije",
+                  "Kritički prosuditi uspješna i neuspješna poduzeća",
+                  "Poznavati pravnu regulativu",
+                  "Detaljno poznavanje problematike osnivanja malog poduzeća, izrade poslovnog plana, izbora proizvoda /usluga, analize tržišta.",
+                  "Analizirati temeljne financijske izvještaje za različite skupine korisnika",
+                  "Procijeniti ekonomska kretanja na temelju analize podataka",
+                  "Provoditi strateško planiranje u malim i srednjim poduzećima",
+                  "Poznavati alate menadžerskog računovodstva za procjenu troškova poduzeća",
+                  "Identificirati uzorak i provesti istraživanja tržišta",
+                  "Izraditi poslovni plan poduzeća u skladu s procesima planiranja i kontrole",
+                  "Izraditi financijski plan",
+                  "Izraditi plan upravljanja rizicima na projektu",
+                  "Poznavati izvore financiranja projekata",
+                  "3. METODOLOŠKE KOMPETENCIJE",
+                  "Identificirati trendove na domaćem i međunarodnom tržištu",
+                  "Analizirati potrebe korisnika (istraživati turističko tržište, anketirati korisnike/potrošače)",
+                  "Izraditi strateške dokumente (poznavati alate za strateško planiranje (stablo problema i ciljeva, SWOT)",
+                  "Izraditi marketinški plan",
+                  "Izraditi poslovne planove na razini organizacije",
+                  "Izraditi i voditi poduzetničke (i infrastrukturne) projekte",
+                  "4. INTERDISCIPLINARNE KOMPETENCIJE",
+                  "Komunicirati sa suradnicima i korisnicima usluga",
+                  "Koordinirati sve poslovne aktivnosti u skladu s propisima o očuvanju okoliša"
+                ],
+                "Ishodi učenja": [
+                  "Preporučiti poslovnu strategiju malih i srednjih poduzeća",
+                  "Preispitati elemente financijskog poslovanja, temeljne pojmove, sadržaj i važnost menadžerskog računovodstva",
+                  "Analizirati financijske planove i financijske izvještaje, pratiti financijske rezultate, upravljati financijskim i investicijskim rizicima",
+                  "Provesti istraživanja tržišta u poslovnom odlučivanju",
+                  "Preporučiti primjeren marketinški program",
+                  "Predvidjeti trendove na domaćem i međunarodnom tržištu",
+                  "Kreirati strateške marketinške dokumente",
+                  "Kreirati poslovni plan, uključijući finacijski plan i plan upravljanja rizicima",
+                  "Kreirati i upravljati poduzetničkim (i infrastrukturnim) projektima",
+                  "Utvrditi odgovarajuće komunikacijske tehnike u određenoj situaciji",
+                  "Koordinirati sve poslovne aktivnosti u skladu s propisima o očuvanju okoliša",
+                  "Preporučiti alate menadžerskog računovodstva za procjenu troškova poduzeća",
+                  "Kreirati i razvijati nove proizvode unutar određene turističke destinacije uvažavajući načela održivog razvoja turizma",
+                  "Preporučiti odgovarajući način upravljanja integriranim turističkim proizvodima",
+                  "Ustanoviti specifičnosti poreznog sustava i mogućnosti primjene u poslovanju poduzeća",
+                  "Koristiti komunikacijske platforme na internetu i ostale ICT alate",
+                  "Vrednovati integrirane sustave upravljanja u poslovnom okruženju na praktičnim primjerima",
+                  "Utvrditi osnovna obilježja akademskog stila i jezika pisanja"
+                ],
+                "Predmeti": [
+                  {
+                    "Godina": "1. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "1. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Menadžment malih i srednjih poduzeća",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Pokretanje i upravljanje poduzetničkim pothvatom",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Menadžersko računovodstvo",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Istraživanje tržišta",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 15,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Upravljanje financijama",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "2. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Strateški menadžment",
+                            "Predavanja": 45,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Marketing malih i srednjih poduzeća",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Porezni sustav i oporezivanje poduzeća",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Interkulturalna komunikacija",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Stručna praksa",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "Godina": "2. Godina",
+                    "dataG": [
+                      {
+                        "Semestar": "3. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Poslovno odlučivanje u malim i srednjim poduzećima",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Održivi razvoj i društvena odgovornost",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Integrirana marketinška komunikacija",
+                            "Predavanja": 30,
+                            "Seminari": 30,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Investicijski menadžment",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni engleski jezik 1",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Interesna udruživanja malih i srednjih poduzeća",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Organizacijsko ponašanje",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Međunarodno poslovanje",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      },
+                      {
+                        "Semestar": "4. Semestar",
+                        "dataS": [
+                          {
+                            "NazivPredmeta": "Integrirani sustavi upravljanja",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 5,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Metodologija izrade diplomskog rada",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 15,
+                            "ECTS": 1,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Stručna praksa",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 6,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Diplomski rad",
+                            "Predavanja": 0,
+                            "Seminari": 0,
+                            "Vježbe": 0,
+                            "ECTS": 10,
+                            "Obavezan/Izborni": "O"
+                          },
+                          {
+                            "NazivPredmeta": "Poslovni engleski jezik 2",
+                            "Predavanja": 30,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Tržište rada",
+                            "Predavanja": 15,
+                            "Seminari": 0,
+                            "Vježbe": 30,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Krizni menadžment",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          },
+                          {
+                            "NazivPredmeta": "Analiza ekonomske politike Europske unije",
+                            "Predavanja": 30,
+                            "Seminari": 15,
+                            "Vježbe": 0,
+                            "ECTS": 4,
+                            "Obavezan/Izborni": "I"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -2,4 +2,9 @@
     <string name="app_name">VSMTI Info</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vijesti">Vijesti</string>
+    <string name="studijski_programi">Studijski programi</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="www_vsmti_hr">www.vsmti.hr</string>
 </resources>
