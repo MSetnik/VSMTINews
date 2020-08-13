@@ -1,5 +1,6 @@
 package com.example.vsmtiinfo.Fragment;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -26,6 +27,7 @@ import com.example.vsmtiinfo.Model.StudijskiProgrami;
 import com.example.vsmtiinfo.Model.StudijskiSmjer;
 import com.example.vsmtiinfo.R;
 import com.example.vsmtiinfo.ViewModel.MyViewModel;
+import com.example.vsmtiinfo.WaitForJson;
 
 import java.util.ArrayList;
 
@@ -40,64 +42,40 @@ public class StudijskiProgramiFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         viewModel = new ViewModelProvider(this).get(MyViewModel.class);
-        studijskiProgrami = viewModel.LoadJsonStudijskiProgrami();
+//        viewModel.Retrofit();
+//        viewModel.SetOnStudijskiProgramiFinishListener(new WaitForJson() {
+//            @Override
+//            public void GetStudijskiProgrami(StudijskiProgrami SP) {
+//                Log.d(TAG, "GetStudijskiProgrami:   " + SP.getStudijskiProgram());
+//            }
+//        });
+//        studijskiProgrami = viewModel.LoadJsonStudijskiProgrami();
 
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_studijski_programi, container, false);
+        final ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_studijski_programi, container, false);
 //        LoadNews();
-        recyclerView = viewGroup.findViewById(R.id.recyclerView);
-        StudijskiProgramiAdapter studijskiProgramiAdapter = new StudijskiProgramiAdapter(getActivity(), studijskiProgrami.getStudijskiProgram());
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setAdapter(studijskiProgramiAdapter);
+        final ProgressDialog progressDialog = new ProgressDialog(getActivity());
+        progressDialog.setMessage("Dohvaćanje studijskih programa ..");
+        progressDialog.show();
+        viewModel.SetOnStudijskiProgramiFinishListener(new WaitForJson() {
+            @Override
+            public void GetStudijskiProgrami(StudijskiProgrami SP) {
+
+                Log.d(TAG, "GetStudijskiProgrami: " + SP.getStudijskiProgram());
+                recyclerView = viewGroup.findViewById(R.id.recyclerView);
+                StudijskiProgramiAdapter studijskiProgramiAdapter = new StudijskiProgramiAdapter(getActivity(), SP.getStudijskiProgram());
+                recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+                recyclerView.setAdapter(studijskiProgramiAdapter);
+                progressDialog.hide();
+            }
+        });
+
         return viewGroup;
     }
 
 
-
-
-//    private void GetStudijskiSmjerObject()
-//    {
-//        ArrayList<StudijskiProgram>lSProg;
-//
-//        lSProg = studijskiProgrami.getStudijskiProgram();
-//        for (StudijskiProgram studijskiProgram : lSProg)
-//        {
-//            ArrayList<StudijskiSmjer>Smjer;
-//            Smjer = studijskiProgram.getStudijskiSmjer();
-//            for (StudijskiSmjer studijskiSmjer : Smjer)
-//            {
-//                ArrayList<Studij>studij;
-//                studij = studijskiSmjer.getStudijskiSmjer();
-//                for(Studij studij1 : studij)
-//                {
-//                    ArrayList<Godina>lGodina;
-//                    StudijData studijData = studij1.getStudijData();
-//                    lGodina = studijData.getPredmeti();
-//
-//                    for (Godina godina : lGodina)
-//                    {
-//                        ArrayList<Semestar>lSemestar;
-//                        lSemestar = godina.getSemestar();
-//
-//                        for (Semestar semestar : lSemestar)
-//                        {
-//                            ArrayList<Predmet>lPredmet;
-//
-//                            lPredmet = semestar.getPredmet();
-//
-//                            for (Predmet predmet : lPredmet)
-//                            {
-//
-//                            }
-//
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
 }

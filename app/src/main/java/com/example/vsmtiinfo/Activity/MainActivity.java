@@ -37,6 +37,7 @@ import com.example.vsmtiinfo.Model.NewsDetail;
 import com.example.vsmtiinfo.Model.StudijskiProgrami;
 import com.example.vsmtiinfo.R;
 import com.example.vsmtiinfo.ViewModel.MyViewModel;
+import com.example.vsmtiinfo.WaitForJson;
 import com.example.vsmtiinfo.WaitForNews;
 import com.example.vsmtiinfo.WaitForNewsDetails;
 import com.google.android.material.navigation.NavigationView;
@@ -58,17 +59,11 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         viewModel = new ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(this.getApplication())).get(MyViewModel.class);
-
-        studijskiProgrami = viewModel.LoadJsonStudijskiProgrami();
         ToolbarSetupBeforeLoading();
         LoadNews();
 
     }
 
-    private void LoadFragment()
-    {
-        getSupportFragmentManager().beginTransaction().replace(R.id.myFragment, new NewsFragment()).commit();
-    }
 
 
     private void ToolbarSetupBeforeLoading()
@@ -237,42 +232,6 @@ public class MainActivity extends AppCompatActivity  {
         }, delay);
     }
 
-
-
-//    private void RecyclerViewBind(ArrayList<News> lNews)
-//    {
-//        recyclerView = findViewById(R.id.newsRecyclerView);
-//        recyclerViewAdapter = new NewsRecyclerViewAdapter(getApplicationContext(), lNews);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-//        recyclerView.setAdapter(recyclerViewAdapter);
-//        //GetItemClicked();
-//    }
-//
-//    private void GetItemClicked()
-//    {
-//        final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this);
-//        recyclerViewAdapter.SetOnClickListener(new NewsRecyclerViewAdapter.OnClickInterface() {
-//
-//            @Override
-//            public void OnClickListener(News news) {
-//                progressDialog.setMessage("Dohvaćanje vijesti ..");
-//                progressDialog.show();
-//
-//                viewModel.GetSingleNewsDetails(news.getUrlToNews());
-//                viewModel.SetOnSingleNewsFinishListener(new WaitForNewsDetails() {
-//                    @Override
-//                    public void GetNewsDetails(NewsDetail newsDetail) {
-//                        Intent intent = new Intent(getApplicationContext(), SingleNewsActivity.class);
-//                        intent.putExtra("newsDetails", newsDetail);
-//                        startActivity(intent);
-//                        progressDialog.dismiss();
-//                    }
-//                });
-//
-//            }
-//
-//        });
-//    }
 
 
 }

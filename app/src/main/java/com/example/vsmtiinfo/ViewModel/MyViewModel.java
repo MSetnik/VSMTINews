@@ -1,27 +1,32 @@
 package com.example.vsmtiinfo.ViewModel;
 
 import android.app.Application;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 
 import com.example.vsmtiinfo.Data.GetNewsData;
 import com.example.vsmtiinfo.Data.GetSelectedNewsDetails;
+import com.example.vsmtiinfo.Data.JsonRetrofitApi;
 import com.example.vsmtiinfo.GetNewsDetailInterface;
 import com.example.vsmtiinfo.GetNewsInterface;
 import com.example.vsmtiinfo.Model.Godina;
 import com.example.vsmtiinfo.Model.News;
 import com.example.vsmtiinfo.Model.NewsDetail;
-import com.example.vsmtiinfo.Model.Predmet;
-import com.example.vsmtiinfo.Model.StudijskiProgram;
 import com.example.vsmtiinfo.Model.StudijskiProgrami;
+import com.example.vsmtiinfo.WaitForJson;
 import com.example.vsmtiinfo.WaitForNews;
 import com.example.vsmtiinfo.WaitForNewsDetails;
 import com.google.gson.Gson;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MyViewModel extends AndroidViewModel {
     private static final String TAG = "MyApp";
@@ -31,6 +36,8 @@ public class MyViewModel extends AndroidViewModel {
     private GetSelectedNewsDetails getSelectedNewsDetails;
     private NewsDetail newsDetail;
     public ArrayList<News>lNewsVM = new ArrayList<>();
+    private WaitForJson waitForJson;
+
 
     private ArrayList<Godina>lGodina = new ArrayList<>();
 
@@ -74,43 +81,45 @@ public class MyViewModel extends AndroidViewModel {
         this.waitForNewsDetails = waitForNewsDetails;
     }
 
-    public StudijskiProgrami LoadJsonStudijskiProgrami()
-    {
-        String json = null;
-        try {
-            InputStream is = getApplication().getAssets().open("VSMTI_studijskiProgrami.json");
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            json = new String(buffer, "UTF-8");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
-        StudijskiProgrami studijskiProgrami = ParseJsonStudijskiProgrami(json);
 
-        return studijskiProgrami;
-    }
-
-    public StudijskiProgrami ParseJsonStudijskiProgrami(String json)
+    public void ParseJsonStudijskiProgrami(String json)
     {
         Gson gson = new Gson();
         StudijskiProgrami studijskiProgrami = gson.fromJson(json,StudijskiProgrami.class);
-        return studijskiProgrami;
+        waitForJson.GetStudijskiProgrami(studijskiProgrami);
     }
 
-
-    public void SetGodinaList(ArrayList<Godina>lGodina)
+    public void SetOnStudijskiProgramiFinishListener(WaitForJson waitForJson)
     {
-        this.lGodina = lGodina;
+        this.waitForJson = waitForJson;
+        Retrofit();
     }
 
-    public ArrayList<Godina> GetGodinaList()
+    public void Retrofit()
     {
-        return this.lGodina;
-    }
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("https://vsmti.hr/wp-content/uploads/2020/08/").addConverterFactory(GsonConverterFactory.create()).build();
 
+        JsonRetrofitApi jsonRetrofitApi = retrofit.create(JsonRetrofitApi.class);
+
+        Call<StudijskiProgrami> call = jsonRetrofitApi.GetStudijskiProgrami();
+
+        call.enqueue(new Callback<StudijskiProgrami>() {
+            @Override
+            public void onResponse(Call<StudijskiProgrami> call, Response<StudijskiProgrami> response) {
+                if (!response.isSuccessful()) {
+                    return;
+                }
+                StudijskiProgrami studijskiProgrami= response.body();
+                waitForJson.GetStudijskiProgrami(studijskiProgrami);
+            }
+
+            @Override
+            public void onFailure(Call<StudijskiProgrami> call, Throwable t) {
+                Log.d(TAG, "onFailure: error");
+            }
+
+        });
+    }
 
 
 }
