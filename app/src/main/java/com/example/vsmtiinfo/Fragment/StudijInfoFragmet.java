@@ -64,21 +64,11 @@ public class StudijInfoFragmet extends Fragment {
     private void GetStudijData(ViewGroup viewGroup)
     {
         final TextView studijNaslov = viewGroup.findViewById(R.id.studijNaslov);
-        TextView trajanjeStudijaNaslovTV = viewGroup.findViewById(R.id.trajanjeStudijaNaslov);
         final TextView trajanjeStudijaTxtTV = viewGroup.findViewById(R.id.trajanjeStudijaTxt);
-        TextView strucniNazivNaslovTV = viewGroup.findViewById(R.id.struciNazivNaslov);
         final TextView strucniNazivTxtTV = viewGroup.findViewById(R.id.struciNazivTxt);
-        TextView kompetencijeNaslovTV = viewGroup.findViewById(R.id.kompetencijeNaslov);
         final TextView kompetencijeTxtTV = viewGroup.findViewById(R.id.kompetencijeTxtTV);
-//        kompetencijeRecycler = viewGroup.findViewById(R.id.kompetencijeRecycler);
-        TextView ishodiNaslovTV = viewGroup.findViewById(R.id.ishodiUcenjaNaslov);
-//        RecyclerView ishodiRecycler = viewGroup.findViewById(R.id.ishodiUcenjaRecycler);
         final TextView ishodiTxt = viewGroup.findViewById(R.id.ishodiUcenjaTxtTV);
-        TextView predmetiNaslovTV = viewGroup.findViewById(R.id.predmetiNaslov);
-//        RecyclerView predmetiRecycler = viewGroup.findViewById(R.id.predmetiRecycler);
         final Button btnPredmeti = viewGroup.findViewById(R.id.btnPredmeti);
-//        TableLayout predmetiTable = (TableLayout) viewGroup.findViewById(R.id.predmetiTable);
-//        FrameLayout predmetiFragment = viewGroup.findViewById(R.id.predmetiFragment);
 
         final String sStudij;
         sStudij = getArguments().getString("Studij");

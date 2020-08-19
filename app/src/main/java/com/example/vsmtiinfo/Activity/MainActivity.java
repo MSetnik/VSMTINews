@@ -50,29 +50,19 @@ public class MainActivity extends AppCompatActivity  {
     private static final String TAG = "MyApp";
     private ArrayList<News> lNews = new ArrayList<>();
     public MyViewModel viewModel;
-    private ArrayList<NewsDetail>AllnewsDetails = new ArrayList<>();
-    private StudijskiProgrami studijskiProgrami;
+    private NavigationView navigationView;
     private DrawerLayout drawer;
+    private int clickedItemID = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         viewModel = new ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(this.getApplication())).get(MyViewModel.class);
-        ToolbarSetupBeforeLoading();
-        LoadNews();
-
+        navigationView = findViewById(R.id.nav_view);
+        ToolbarSetup();
+        GetIntent();
     }
-
-
-
-    private void ToolbarSetupBeforeLoading()
-    {
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.app_name);
-        setSupportActionBar(toolbar);
-    }
-
 
     private void ToolbarSetup()
     {
@@ -80,7 +70,12 @@ public class MainActivity extends AppCompatActivity  {
         setSupportActionBar(toolbar);
 
         drawer = findViewById(R.id.drawer_layout);
-        final TextView navDrawerLink = findViewById(R.id.navDrawerLink);
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        View headerView = navigationView.getHeaderView(0);
+        TextView navDrawerLink = (TextView) headerView.findViewById(R.id.navDrawerLink);
+
+//        final TextView navDrawerLink = findViewById(R.id.navDrawerLink);
         navDrawerLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -95,8 +90,7 @@ public class MainActivity extends AppCompatActivity  {
 
     public void openWebPage(String url) {
         try {
-            String link = "https://" + url;
-            Uri webpage = Uri.parse(link);
+            Uri webpage = Uri.parse(url);
             Intent myIntent = new Intent(Intent.ACTION_VIEW, webpage);
             startActivity(myIntent);
         } catch (ActivityNotFoundException e) {
@@ -104,6 +98,15 @@ public class MainActivity extends AppCompatActivity  {
             e.printStackTrace();
         }
     }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        navigationView.setCheckedItem(R.id.vijesti);
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -119,13 +122,61 @@ public class MainActivity extends AppCompatActivity  {
 
     private void NavigationViewSetup()
     {
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView = findViewById(R.id.nav_view);
         navigationView.setCheckedItem(R.id.vijesti);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId())
                 {
+                    case R.id.pocetna:
+                        clickedItemID = R.id.pocetna;
+                        break;
+
+                    case R.id.vijesti:
+                        clickedItemID = R.id.vijesti;
+                        break;
+
+                    case R.id.studijskiProg:
+                        clickedItemID = R.id.studijskiProg;
+
+                        break;
+
+                    case R.id.kontakt:
+                        clickedItemID = R.id.kontakt;
+                        break;
+
+                }
+
+                //zatvori drawer
+                drawer.closeDrawer(GravityCompat.START);
+
+                return true;
+            }
+        });
+        // dodaje se drawer listener kako bi se spriječio lagg kod zatvaranja drawera
+
+        drawer.addDrawerListener(new DrawerLayout.DrawerListener() {
+            @Override
+            public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+
+            }
+
+            @Override
+            public void onDrawerOpened(@NonNull View drawerView) {
+
+            }
+
+            @Override
+            public void onDrawerClosed(@NonNull View drawerView) {
+                switch (clickedItemID)
+                {
+                    case R.id.pocetna:
+                        Intent intent = new Intent(MainActivity.this, PocetniActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
+                        break;
+
                     case R.id.vijesti:
                         NewsFragment newsFragment = new NewsFragment();
 
@@ -141,15 +192,21 @@ public class MainActivity extends AppCompatActivity  {
 
                     case R.id.studijskiProg:
                         getSupportFragmentManager().beginTransaction().replace(R.id.myFragment, new StudijskiProgramiFragment()).commit();
-
-
                         break;
 
-                }
-                //zatvori drawer
-                drawer.closeDrawer(GravityCompat.START);
+                    case R.id.kontakt:
+                        Intent intentKontakt = new Intent(MainActivity.this, Kontakt.class);
+                        intentKontakt.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intentKontakt);
+                        break;
 
-                return true;
+
+                }
+            }
+
+            @Override
+            public void onDrawerStateChanged(int newState) {
+
             }
         });
     }
@@ -168,7 +225,6 @@ public class MainActivity extends AppCompatActivity  {
                 @Override
                 public void GetNews(ArrayList<News> lNews) {
                     SaveNews(lNews);
-                    ToolbarSetup();
                     NavigationViewSetup();
                     NewsFragment newsFragment = new NewsFragment();
 
@@ -179,20 +235,19 @@ public class MainActivity extends AppCompatActivity  {
                     FragmentManager fm = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fm.beginTransaction();
                     fragmentTransaction.replace(R.id.myFragment,newsFragment);
-                    fragmentTransaction.commit();
+
+                    if(!fm.isDestroyed())
+                    {
+                        fragmentTransaction.commit();
+                    }
                     LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimation);
                     lottieAnimationView.cancelAnimation();
                     lottieAnimationView.setVisibility(View.GONE);
-
-
-                    //getSupportFragmentManager().beginTransaction().replace(R.id.fragment, new NewsFragment()).commit();
                 }
             });
         }
         else
         {
-            ToolbarSetup();
-            NavigationViewSetup();
 
             LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimation);
             lottieAnimationView.cancelAnimation();
@@ -232,6 +287,22 @@ public class MainActivity extends AppCompatActivity  {
         }, delay);
     }
 
+    private void GetIntent()
+    {
+        if (getIntent().getExtras() != null)
+        {
+            LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimation);
+            lottieAnimationView.cancelAnimation();
+            lottieAnimationView.setVisibility(View.GONE);
+
+            getSupportFragmentManager().beginTransaction().replace(R.id.myFragment, new StudijskiProgramiFragment()).commit();
+        }
+        else
+        {
+            LoadNews();
+        }
+
+    }
 
 
 }

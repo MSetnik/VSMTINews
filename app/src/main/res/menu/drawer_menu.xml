@@ -5,12 +5,20 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/pocetna"
+            android:title="@string/po_etna">
+        </item>
+        <item
            android:id="@+id/vijesti"
             android:title="@string/vijesti">
         </item>
         <item
             android:id="@+id/studijskiProg"
             android:title="@string/studijski_programi">
+        </item>
+        <item
+            android:id="@+id/kontakt"
+            android:title="@string/kontakt">
         </item>
     </group>
 

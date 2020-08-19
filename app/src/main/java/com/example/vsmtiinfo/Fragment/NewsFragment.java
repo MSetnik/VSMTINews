@@ -65,33 +65,10 @@ public class NewsFragment extends Fragment {
     {
         ArrayList<News> news;
         Bundle bundle = getArguments();
+
         news = bundle.getParcelableArrayList("lNews");
         return  news;
     }
-
-
-
-    private void RecyclerViewBind(final ViewGroup viewGroup, ArrayList<News>lNews) {
-
-//        MainActivity mainActivity = new MainActivity();
-//        mainActivity.SetOnSendListener(new SendNewsToFragment() {
-//            @Override
-//            public void SendNews(ArrayList<News> lNews) {
-//                recyclerView = viewGroup.findViewById(R.id.newsRecyclerView);
-//                recyclerViewAdapter = new NewsRecyclerViewAdapter(getContext(), lNews);
-//                recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-//                recyclerView.setAdapter(recyclerViewAdapter);
-//                GetItemClicked();
-//            }
-//        });
-//    }
-        recyclerView = viewGroup.findViewById(R.id.newsRecyclerView);
-        recyclerViewAdapter = new NewsRecyclerViewAdapter(getActivity(), lNews);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setAdapter(recyclerViewAdapter);
-        GetItemClicked();
-    }
-
 
 
     private void GetItemClicked()

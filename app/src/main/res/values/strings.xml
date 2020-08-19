@@ -7,4 +7,8 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="www_vsmti_hr">www.vsmti.hr</string>
+    <string name="po_etna">Početna</string>
+    <string name="kontakt">Kontakt</string>
+
+    <string name="googleMapsApiKey">AIzaSyD75CXPq0KBy_41p0jIX_nMXUKgGsH5RHs</string>
 </resources>

@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vsmtiinfo.Model.News;
@@ -59,6 +60,7 @@ public class NewsRecyclerViewAdapter extends RecyclerView.Adapter<NewsRecyclerVi
         TextView newsTitle;
         TextView newsDate;
         TextView newsContent;
+        CardView cardNews;
 
         public NewsViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -66,8 +68,9 @@ public class NewsRecyclerViewAdapter extends RecyclerView.Adapter<NewsRecyclerVi
             newsTitle = itemView.findViewById(R.id.newsTitle);
             newsDate = itemView.findViewById(R.id.newsDate);
             newsContent = itemView.findViewById(R.id.newsContent);
+            cardNews = itemView.findViewById(R.id.cardNews);
 
-            itemView.setOnClickListener(new View.OnClickListener() {
+            cardNews.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     int position = getAdapterPosition();
