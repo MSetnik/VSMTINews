@@ -7,7 +7,6 @@
     tools:context=".Activity.MainActivity"
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true">
-    <!--fits systemWindows = transparent notifyBar-->
 
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -10,6 +10,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -56,6 +57,18 @@ public class Kontakt extends AppCompatActivity implements OnMapReadyCallback {
         OpenVsmtiLink();
     }
 
+    @Override
+    public void onBackPressed() {
+        drawer = findViewById(R.id.drawer_layout);
+        if(drawer.isDrawerOpen(GravityCompat.START))
+        {
+            drawer.closeDrawer(GravityCompat.START);
+        }
+        else{
+            super.onBackPressed();
+        }
+    }
+
     private void NavigationViewSetup() {
         drawer = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
@@ -80,6 +93,11 @@ public class Kontakt extends AppCompatActivity implements OnMapReadyCallback {
 
                     case R.id.kontakt:
                         clickedItemID = R.id.kontakt;
+                        break;
+
+
+                    case R.id.virtualnaSetnja:
+                        clickedItemID = R.id.virtualnaSetnja;
                         break;
 
                 }
@@ -126,8 +144,14 @@ public class Kontakt extends AppCompatActivity implements OnMapReadyCallback {
                         break;
 
                     case R.id.kontakt:
-                        drawer.closeDrawer(GravityCompat.START);
                         break;
+
+                    case R.id.virtualnaSetnja:
+                        Intent intentVS = new Intent(Kontakt.this, ProstorSkoleActivity.class);
+                        intentVS.putExtra("fragment", "studijski programi");
+                        intentVS.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intentVS);
+
                 }
             }
 
@@ -146,7 +170,9 @@ public class Kontakt extends AppCompatActivity implements OnMapReadyCallback {
 
     private void ToolbarSetup() {
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("Kontakt");
         setSupportActionBar(toolbar);
+
 
         drawer = findViewById(R.id.drawer_layout);
 
@@ -154,8 +180,6 @@ public class Kontakt extends AppCompatActivity implements OnMapReadyCallback {
         View headerView = navigationView.getHeaderView(0);
         TextView navDrawerLink = (TextView) headerView.findViewById(R.id.navDrawerLink);
 
-
-//        TextView navDrawerLink =(TextView) findViewById(R.id.navDrawerLink);
         navDrawerLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -211,37 +235,44 @@ public class Kontakt extends AppCompatActivity implements OnMapReadyCallback {
             @Override
             public void onClick(View v) {
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                emailIntent.setType("text/plain");
+                emailIntent.setData(Uri.parse("mailto:")); // only email apps should handle this
                 emailIntent.putExtra(Intent.EXTRA_EMAIL, "info@vsmti.hr"); // recipients
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Upit");
-                startActivity(Intent.createChooser(emailIntent,"Kontakt"));
+//                startActivity(Intent.createChooser(emailIntent,"Kontakt"));
+                startActivity(emailIntent);
             }
         });
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
-        LatLng vsmti = new LatLng(45.841861, 17.387163);
-        mMap.addMarker(new MarkerOptions().position(vsmti).title("Visoka škola za menadžment u turizmu i informatici u Virovitici"));
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(vsmti,15.0f));
 
-        CustomScrollView customScrollView = findViewById(R.id.ScrollView);
+        if(googleMap != null)
+        {
+            mMap = googleMap;
+            LatLng vsmti = new LatLng(45.841861, 17.387163);
+            mMap.addMarker(new MarkerOptions().position(vsmti).title("Visoka škola za menadžment u turizmu i informatici u Virovitici"));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(vsmti,15.0f));
 
-        customScrollView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                customScrollView.setEnableScrolling(true);
-                return false;
-            }
-        });
+            CustomScrollView customScrollView = findViewById(R.id.ScrollView);
 
-        mMap.setOnCameraMoveStartedListener(new GoogleMap.OnCameraMoveStartedListener() {
-            @Override
-            public void onCameraMoveStarted(int i) {
-                customScrollView.setEnableScrolling(false);
-            }
-        });
-    }
+            customScrollView.setOnTouchListener(new View.OnTouchListener() {
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    customScrollView.setEnableScrolling(true);
+                    return false;
+                }
+            });
+
+            mMap.setOnCameraMoveStartedListener(new GoogleMap.OnCameraMoveStartedListener() {
+                @Override
+                public void onCameraMoveStarted(int i) {
+                    customScrollView.setEnableScrolling(false);
+                }
+            });
+        }
+        }
+
     
 }

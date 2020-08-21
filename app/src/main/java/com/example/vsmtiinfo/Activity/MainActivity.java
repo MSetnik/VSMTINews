@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity  {
     public MyViewModel viewModel;
     private NavigationView navigationView;
     private DrawerLayout drawer;
+    private Toolbar toolbar;
     private int clickedItemID = 0;
 
     @Override
@@ -66,7 +67,14 @@ public class MainActivity extends AppCompatActivity  {
 
     private void ToolbarSetup()
     {
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
+        if (getIntent().getExtras() != null)
+        {
+            toolbar.setTitle("Studijski programi");
+        }
+        else {
+            toolbar.setTitle("Vijesti");
+        }
         setSupportActionBar(toolbar);
 
         drawer = findViewById(R.id.drawer_layout);
@@ -146,6 +154,11 @@ public class MainActivity extends AppCompatActivity  {
                         clickedItemID = R.id.kontakt;
                         break;
 
+                    case R.id.virtualnaSetnja:
+                        clickedItemID = R.id.virtualnaSetnja;
+                        break;
+
+
                 }
 
                 //zatvori drawer
@@ -200,7 +213,11 @@ public class MainActivity extends AppCompatActivity  {
                         startActivity(intentKontakt);
                         break;
 
-
+                    case R.id.virtualnaSetnja:
+                        Intent intentVS = new Intent(MainActivity.this, ProstorSkoleActivity.class);
+                        intentVS.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intentVS);
+                        break;
                 }
             }
 
@@ -296,10 +313,12 @@ public class MainActivity extends AppCompatActivity  {
             lottieAnimationView.setVisibility(View.GONE);
 
             getSupportFragmentManager().beginTransaction().replace(R.id.myFragment, new StudijskiProgramiFragment()).commit();
+
         }
         else
         {
             LoadNews();
+
         }
 
     }

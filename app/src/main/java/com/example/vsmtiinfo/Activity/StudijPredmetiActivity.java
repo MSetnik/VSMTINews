@@ -1,6 +1,7 @@
 package com.example.vsmtiinfo.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -36,7 +37,15 @@ public class StudijPredmetiActivity extends AppCompatActivity {
         setContentView(R.layout.activity_studij_predmeti);
         viewModel = new ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(this.getApplication())).get(MyViewModel.class);
 
+        ToolbarSetup();
         GetData();
+    }
+
+    private void ToolbarSetup()
+    {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("Predmeti");
+        setSupportActionBar(toolbar);
     }
 
     private void GetData()

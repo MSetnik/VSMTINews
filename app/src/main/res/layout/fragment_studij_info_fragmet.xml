@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.StudijInfoFragmet"
-    android:background="@color/white">
+    android:background="@color/colorRecyclerBackground"
+    android:fitsSystemWindows="true">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,196 +15,231 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp">
+            android:paddingBottom="15dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorRecyclerBackground">
 
-            <TextView
-                android:id="@+id/studijNaslov"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewTrajanjeStudija"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="STUDIJ"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="20dp"
+                app:cardCornerRadius="5dp"
+                android:elevation="5dp"
+                android:layout_margin="5dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/cardViewStudijStrucniNaziv">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/trajanjeStudijaNaslov"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TRAJANJE STUDIJA"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="17dp"
+                        android:layout_marginBottom="5dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/trajanjeStudijaTxt"/>
+
+                    <TextView
+                        android:id="@+id/trajanjeStudijaTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/trajanjeStudijaNaslov" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
 
 
-            <TextView
-                android:id="@+id/trajanjeStudijaNaslov"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewStudijStrucniNaziv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="10dp"
-                android:text="TRAJANJE STUDIJA"
-                android:textColor="@color/colorAccent"
-                android:textSize="17dp"
+                app:cardCornerRadius="5dp"
+                android:elevation="5dp"
+                android:layout_margin="5dp"
+                app:layout_constraintTop_toBottomOf="@id/cardViewTrajanjeStudija"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/studijNaslov" />
+                app:layout_constraintBottom_toTopOf="@+id/cardViewKompetencije">
 
-            <TextView
-                android:id="@+id/trajanjeStudijaTxt"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/struciNazivNaslov"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="STRUČNI NAZIV"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="17dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/struciNazivTxt"/>
+
+                    <TextView
+                        android:id="@+id/struciNazivTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/struciNazivNaslov" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewKompetencije"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:textSize="15dp"
+                app:cardCornerRadius="5dp"
+                android:elevation="5dp"
+                android:layout_margin="5dp"
+                app:layout_constraintTop_toBottomOf="@id/cardViewStudijStrucniNaziv"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/trajanjeStudijaNaslov" />
+                app:layout_constraintBottom_toTopOf="@+id/cardViewIshodiUcenja">
 
-            <TextView
-                android:id="@+id/struciNazivNaslov"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:id="@+id/kompetencijeNaslov"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="KOMPETENCIJE"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="17dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/kompetencijeTxtTV"/>
+
+                    <TextView
+                        android:id="@+id/kompetencijeTxtTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/kompetencijeNaslov" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewIshodiUcenja"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginRight="10dp"
-                android:text="STRUČNI NAZIV"
-                android:textColor="@color/colorAccent"
-                android:textSize="17dp"
+                app:cardCornerRadius="5dp"
+                android:elevation="5dp"
+                android:layout_margin="5dp"
+                app:layout_constraintTop_toBottomOf="@id/cardViewKompetencije"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/trajanjeStudijaTxt" />
+                app:layout_constraintBottom_toTopOf="@id/cardViewPredmeti">
 
-            <TextView
-                android:id="@+id/struciNazivTxt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:textSize="15dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/struciNazivNaslov" />
-
-            <TextView
-                android:id="@+id/kompetencijeNaslov"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginRight="10dp"
-                android:text="KOMPETENCIJE"
-                android:textColor="@color/colorAccent"
-                android:textSize="17dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/struciNazivTxt" />
-
-            <!--            <androidx.recyclerview.widget.RecyclerView-->
-            <!--                android:id="@+id/kompetencijeRecycler"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                app:layout_constraintTop_toBottomOf="@id/kompetencijeNaslov"-->
-            <!--                app:layout_constraintLeft_toLeftOf="parent"-->
-            <!--                app:layout_constraintRight_toRightOf="parent"-->
-            <!--                android:layout_marginTop="10dp"-->
-            <!--                android:layout_marginLeft="10dp"-->
-            <!--                android:layout_marginRight="10dp"-->
-            <!--                android:nestedScrollingEnabled="false"-->
-            <!--                tools:listitem="@layout/studij_kompetencije"/>-->
-
-            <TextView
-                android:id="@+id/kompetencijeTxtTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:textSize="15dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/kompetencijeNaslov" />
-
-            <TextView
-                android:id="@+id/ishodiUcenjaNaslov"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginRight="10dp"
-                android:text="ISHODI UČENJA"
-                android:textColor="@color/colorAccent"
-                android:textSize="17dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/kompetencijeTxtTV" />
-
-            <!--            <androidx.recyclerview.widget.RecyclerView-->
-            <!--                android:id="@+id/ishodiUcenjaRecycler"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                app:layout_constraintTop_toBottomOf="@id/ishodiUcenjaNaslov"-->
-            <!--                app:layout_constraintLeft_toLeftOf="parent"-->
-            <!--                app:layout_constraintRight_toRightOf="parent"-->
-            <!--                android:layout_marginTop="10dp"-->
-            <!--                android:layout_marginLeft="10dp"-->
-            <!--                android:layout_marginRight="10dp"/>-->
-
-            <TextView
-                android:id="@+id/ishodiUcenjaTxtTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:textSize="15dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/ishodiUcenjaNaslov" />
-
-            <TextView
-                android:id="@+id/predmetiNaslov"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginRight="10dp"
-                android:text="PREDMETI"
-                android:textColor="@color/colorAccent"
-                android:textSize="17dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/ishodiUcenjaTxtTV" />
-
-<!--            <FrameLayout-->
-<!--                android:id="@+id/predmetiFragment"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/predmetiNaslov"-->
-<!--                app:layout_constraintLeft_toLeftOf="parent"-->
-<!--                app:layout_constraintRight_toRightOf="parent"/>-->
-
-            <Button
-                android:id="@+id/btnPredmeti"
-                android:text="predmeti"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/predmetiNaslov"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:id="@+id/ishodiUcenjaNaslov"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ISHODI UČENJA"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="17dp"
+                        android:layout_marginBottom="5dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/ishodiUcenjaTxtTV"/>
 
 
-            <!--            <androidx.recyclerview.widget.RecyclerView-->
-            <!--                android:id="@+id/predmetiRecycler"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                app:layout_constraintTop_toBottomOf="@id/predmetiNaslov"-->
-            <!--                app:layout_constraintLeft_toLeftOf="parent"-->
-            <!--                app:layout_constraintRight_toRightOf="parent"-->
-            <!--                android:layout_marginTop="10dp"-->
-            <!--                android:layout_marginLeft="10dp"-->
-            <!--                android:layout_marginRight="10dp"/>-->
+                    <TextView
+                        android:id="@+id/ishodiUcenjaTxtTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ishodiUcenjaNaslov" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cardViewPredmeti"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:cardCornerRadius="5dp"
+               android:elevation="5dp"
+               android:layout_margin="5dp"
+               app:layout_constraintTop_toBottomOf="@id/cardViewIshodiUcenja"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_margin="10dp">
+
+                   <TextView
+                       android:id="@+id/predmetiNaslov"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:text="PREDMETI"
+                       android:textColor="@color/colorAccent"
+                       android:textSize="17dp"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintRight_toRightOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+
+                   <Button
+                       android:id="@+id/btnPredmeti"
+                       android:text="predmeti"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintTop_toBottomOf="@id/predmetiNaslov"
+                       app:layout_constraintLeft_toLeftOf="parent"
+                       app:layout_constraintRight_toRightOf="parent"/>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.cardview.widget.CardView>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

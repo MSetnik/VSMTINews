@@ -7,7 +7,11 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -23,6 +27,7 @@ import android.widget.FrameLayout;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
+import com.example.vsmtiinfo.Activity.MainActivity;
 import com.example.vsmtiinfo.Activity.StudijPredmetiActivity;
 import com.example.vsmtiinfo.Adapter.GodinaRecyclerAdapter;
 import com.example.vsmtiinfo.Adapter.PredmetRecyclerAdapter;
@@ -43,14 +48,12 @@ import java.util.ArrayList;
 
 public class StudijInfoFragmet extends Fragment {
     private MyViewModel viewModel;
-    private ArrayList<Studij>lStudij;
-    private RecyclerView godinaRecycler;
-    private ArrayList<Godina>lGodina = new ArrayList<>();
-
+    private DrawerLayout drawer;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         viewModel = new ViewModelProvider(this).get(MyViewModel.class);
+        ToolbarSetup();
     }
 
     @Nullable
@@ -61,9 +64,22 @@ public class StudijInfoFragmet extends Fragment {
         return viewGroup;
     }
 
+    private void ToolbarSetup()
+    {
+        Toolbar toolbar = getActivity().findViewById(R.id.toolbar);
+        final String sStudij;
+        sStudij = getArguments().getString("Studij");
+        toolbar.setTitle(sStudij);
+        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+
+        drawer = getActivity().findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(getActivity(), drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+    }
+
     private void GetStudijData(ViewGroup viewGroup)
     {
-        final TextView studijNaslov = viewGroup.findViewById(R.id.studijNaslov);
         final TextView trajanjeStudijaTxtTV = viewGroup.findViewById(R.id.trajanjeStudijaTxt);
         final TextView strucniNazivTxtTV = viewGroup.findViewById(R.id.struciNazivTxt);
         final TextView kompetencijeTxtTV = viewGroup.findViewById(R.id.kompetencijeTxtTV);
@@ -95,7 +111,6 @@ public class StudijInfoFragmet extends Fragment {
                             if(studij1.getNazivStudija().equals(sStudij))
                             {
                                 StudijData studijData = studij1.getStudijData();
-                                studijNaslov.setText(studij1.getNazivStudija().toUpperCase());
                                 trajanjeStudijaTxtTV.setText(studijData.getTrajanjeStudija());
                                 strucniNazivTxtTV.setText(studijData.getStrucniNazivIAkademskiStupanj());
 

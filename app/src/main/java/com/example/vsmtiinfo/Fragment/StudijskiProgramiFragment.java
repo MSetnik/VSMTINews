@@ -6,6 +6,9 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
@@ -23,6 +26,7 @@ import android.view.ViewGroup;
 import com.example.vsmtiinfo.Activity.Kontakt;
 import com.example.vsmtiinfo.Activity.MainActivity;
 import com.example.vsmtiinfo.Activity.PocetniActivity;
+import com.example.vsmtiinfo.Activity.ProstorSkoleActivity;
 import com.example.vsmtiinfo.Adapter.NewsRecyclerViewAdapter;
 import com.example.vsmtiinfo.Adapter.StudijskiProgramiAdapter;
 import com.example.vsmtiinfo.Model.Godina;
@@ -54,7 +58,7 @@ public class StudijskiProgramiFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         viewModel = new ViewModelProvider(this).get(MyViewModel.class);
-
+        ToolbarSetup();
 
     }
 
@@ -80,6 +84,18 @@ public class StudijskiProgramiFragment extends Fragment {
         NavigationViewSetup();
 
         return viewGroup;
+    }
+
+    private void ToolbarSetup()
+    {
+        Toolbar toolbar = getActivity().findViewById(R.id.toolbar);
+        toolbar.setTitle("Studijski programi");
+        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+
+        drawer = getActivity().findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(getActivity(), drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
     }
 
     @Override
@@ -121,6 +137,10 @@ public class StudijskiProgramiFragment extends Fragment {
 
                     case R.id.kontakt:
                         clickedItemID = R.id.kontakt;
+                        break;
+
+                    case R.id.virtualnaSetnja:
+                        clickedItemID = R.id.virtualnaSetnja;
                         break;
 
                 }
@@ -172,6 +192,13 @@ public class StudijskiProgramiFragment extends Fragment {
                         intentKontakt.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intentKontakt);
                         break;
+
+                    case R.id.virtualnaSetnja:
+                        Intent intentVS = new Intent(getActivity(), ProstorSkoleActivity.class);
+                        intentVS.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intentVS);
+                        break;
+
                 }
             }
 

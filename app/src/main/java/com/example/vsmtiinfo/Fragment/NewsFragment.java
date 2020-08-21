@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -60,6 +62,7 @@ public class NewsFragment extends Fragment {
         GetItemClicked();
         return viewGroup;
     }
+
 
     private ArrayList<News> GetNewsFromActivity()
     {

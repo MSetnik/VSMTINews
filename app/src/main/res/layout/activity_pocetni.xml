@@ -7,7 +7,7 @@
     android:id="@+id/drawer_layout"
     tools:context=".Activity.PocetniActivity"
     android:fitsSystemWindows="true">
-<!--fits systemWindows = transparent notifyBar-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,7 +23,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerPocetni"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

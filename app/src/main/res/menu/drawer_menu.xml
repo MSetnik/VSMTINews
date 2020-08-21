@@ -5,21 +5,29 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:icon="@drawable/ic_home"
             android:id="@+id/pocetna"
             android:title="@string/po_etna">
         </item>
         <item
-           android:id="@+id/vijesti"
+            android:icon="@drawable/ic_news2"
+            android:id="@+id/vijesti"
             android:title="@string/vijesti">
         </item>
         <item
             android:id="@+id/studijskiProg"
+            android:icon="@drawable/ic_university"
             android:title="@string/studijski_programi">
         </item>
         <item
+            android:id="@+id/virtualnaSetnja"
+            android:icon="@drawable/ic_360"
+            android:title="@string/virtualna_etnja">
+        </item>
+        <item
             android:id="@+id/kontakt"
+            android:icon="@drawable/ic_contact"
             android:title="@string/kontakt">
         </item>
     </group>
-
 </menu>
