@@ -183,7 +183,7 @@ public class Kontakt extends AppCompatActivity implements OnMapReadyCallback {
         navDrawerLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openWebPage(String.valueOf(navDrawerLink.getText()));
+                openWebPage("https://www.vsmti.hr");
             }
         });
 
@@ -192,7 +192,9 @@ public class Kontakt extends AppCompatActivity implements OnMapReadyCallback {
         toggle.syncState();
     }
 
+    private static final String TAG = "MyApp";
     private void openWebPage(String url) {
+        Log.d(TAG, "openWebPage: " + url);
         try {
             Uri webpage = Uri.parse(url);
             Intent myIntent = new Intent(Intent.ACTION_VIEW, webpage);
@@ -218,11 +220,10 @@ public class Kontakt extends AppCompatActivity implements OnMapReadyCallback {
     private void OpenVsmtiLink()
     {
         ConstraintLayout vsmtiLink = findViewById(R.id.constraintWeb);
-        TextView vsmtiurl = findViewById(R.id.TVWebLink);
         vsmtiLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openWebPage(vsmtiurl.getText().toString());
+                openWebPage("https://www.vsmti.hr");
             }
         });
     }
@@ -234,11 +235,10 @@ public class Kontakt extends AppCompatActivity implements OnMapReadyCallback {
         mail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                emailIntent.setData(Uri.parse("mailto:")); // only email apps should handle this
-                emailIntent.putExtra(Intent.EXTRA_EMAIL, "info@vsmti.hr"); // recipients
+                emailIntent.setData(Uri.parse("mailto:" + "info@vsmti.hr")); // only email apps should handle this
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Upit");
-//                startActivity(Intent.createChooser(emailIntent,"Kontakt"));
                 startActivity(emailIntent);
             }
         });

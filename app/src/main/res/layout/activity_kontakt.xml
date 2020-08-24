@@ -179,7 +179,7 @@
                                     android:id="@+id/TVWebLink"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="https://www.vsmti.hr "
+                                    android:text="www.vsmti.hr "
                                     android:textSize="14dp"
                                     android:textColor="@color/link"
                                     app:layout_constraintBottom_toTopOf="@id/TVWeb"
