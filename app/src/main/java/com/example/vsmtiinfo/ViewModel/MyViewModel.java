@@ -9,11 +9,13 @@ import androidx.lifecycle.AndroidViewModel;
 import com.example.vsmtiinfo.Data.GetNewsData;
 import com.example.vsmtiinfo.Data.GetSelectedNewsDetails;
 import com.example.vsmtiinfo.Data.JsonRetrofitApi;
+import com.example.vsmtiinfo.Data.NotificationRetrofitApi;
 import com.example.vsmtiinfo.GetNewsDetailInterface;
 import com.example.vsmtiinfo.GetNewsInterface;
 import com.example.vsmtiinfo.Model.Godina;
 import com.example.vsmtiinfo.Model.News;
 import com.example.vsmtiinfo.Model.NewsDetail;
+import com.example.vsmtiinfo.Model.Notification;
 import com.example.vsmtiinfo.Model.StudijskiProgrami;
 import com.example.vsmtiinfo.WaitForJson;
 import com.example.vsmtiinfo.WaitForNews;
@@ -37,6 +39,7 @@ public class MyViewModel extends AndroidViewModel {
     private NewsDetail newsDetail;
     public ArrayList<News>lNewsVM = new ArrayList<>();
     private WaitForJson waitForJson;
+    private WaitForNotificationInterface waitForNotificationInterface;
 
 
     private ArrayList<Godina>lGodina = new ArrayList<>();
@@ -82,20 +85,20 @@ public class MyViewModel extends AndroidViewModel {
     }
 
 
-    public void ParseJsonStudijskiProgrami(String json)
-    {
-        Gson gson = new Gson();
-        StudijskiProgrami studijskiProgrami = gson.fromJson(json,StudijskiProgrami.class);
-        waitForJson.GetStudijskiProgrami(studijskiProgrami);
-    }
+//    public void ParseJsonStudijskiProgrami(String json)
+//    {
+//        Gson gson = new Gson();
+//        StudijskiProgrami studijskiProgrami = gson.fromJson(json,StudijskiProgrami.class);
+//        waitForJson.GetStudijskiProgrami(studijskiProgrami);
+//    }
 
     public void SetOnStudijskiProgramiFinishListener(WaitForJson waitForJson)
     {
         this.waitForJson = waitForJson;
-        Retrofit();
+        RetrofitStudijskiProgrami();
     }
 
-    public void Retrofit()
+    public void RetrofitStudijskiProgrami()
     {
         Retrofit retrofit = new Retrofit.Builder().baseUrl("https://vsmti.hr/wp-content/uploads/2020/08/").addConverterFactory(GsonConverterFactory.create()).build();
 
@@ -120,6 +123,49 @@ public class MyViewModel extends AndroidViewModel {
 
         });
     }
+
+
+    public void RetrofitNotifications()
+    {
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://hub.vsmti.hr/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        NotificationRetrofitApi notificationRetrofitApi = retrofit.create(NotificationRetrofitApi.class);
+
+        Call<ArrayList<Notification>> call = notificationRetrofitApi.GetNotifications();
+
+        call.enqueue(new Callback<ArrayList<Notification>>() {
+            @Override
+            public void onResponse(Call<ArrayList<Notification>> call, Response<ArrayList<Notification>> response) {
+                if (!response.isSuccessful()) {
+                    return;
+                }
+                ArrayList<Notification>lNotifications = new ArrayList<>();
+               lNotifications= response.body();
+                waitForNotificationInterface.GetNotifications(lNotifications);
+            }
+
+            @Override
+            public void onFailure(Call<ArrayList<Notification>> call, Throwable t) {
+                Log.d(TAG, "onFailure: error " + t.toString());
+            }
+        });
+
+    }
+
+    public interface WaitForNotificationInterface{
+        void GetNotifications(ArrayList<Notification> notification);
+    }
+
+
+    public void SetOnNotificationsListener(WaitForNotificationInterface waitForNotificationInterface)
+    {
+        this.waitForNotificationInterface = waitForNotificationInterface;
+        RetrofitNotifications();
+    }
+
+
 
 
 }

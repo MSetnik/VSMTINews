@@ -5,16 +5,30 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.work.Data;
+import androidx.work.ExistingPeriodicWorkPolicy;
+import androidx.work.PeriodicWorkRequest;
+import androidx.work.WorkManager;
+import androidx.work.WorkRequest;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TaskStackBuilder;
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -34,8 +48,11 @@ import com.example.vsmtiinfo.Fragment.NewsFragment;
 import com.example.vsmtiinfo.Fragment.StudijskiProgramiFragment;
 import com.example.vsmtiinfo.Model.Linkovi;
 import com.example.vsmtiinfo.Model.News;
+import com.example.vsmtiinfo.Model.Notification;
 import com.example.vsmtiinfo.Model.StudijskiProgram;
+import com.example.vsmtiinfo.Notification.NotificationWorker;
 import com.example.vsmtiinfo.R;
+import com.example.vsmtiinfo.ViewModel.MyViewModel;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -44,6 +61,9 @@ import com.google.android.material.navigation.NavigationView;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import retrofit2.http.HTTP;
 
@@ -53,16 +73,63 @@ public class PocetniActivity extends AppCompatActivity {
     private ArrayList<Linkovi>lLinkovi = new ArrayList<>();
     private RecyclerView recyclerView;
     private  NavigationView navigationView;
+    private MyViewModel viewModel;
     private int clickedItemID = 0;
     private PocetniActivityRecyclerViewAdapter recyclerViewAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pocetni);
+
+        viewModel = new ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(this.getApplication())).get(MyViewModel.class);
         ToolbarSetup();
         NavigationViewSetup();
         RecyclerViewBind();
+        GetNotifications();
+    }
 
+    private void GetNotifications()
+    {
+        viewModel.SetOnNotificationsListener(new MyViewModel.WaitForNotificationInterface() {
+            @Override
+            public void GetNotifications(ArrayList<Notification> notification) {
+                Log.d(TAG, "GetNotifications: " + notification.size());
+
+                //Koristeno kako bi se zaustavili i uklonili ostali NotificationWorker taskovi prilikom otvaranja activitija iz notifikacije
+                WorkManager.getInstance(getApplicationContext()).cancelAllWork();
+                WorkManager.getInstance(getApplicationContext()).pruneWork();
+
+
+                for (Notification notification1 : notification)
+                {
+                    startNotificationTask(getApplicationContext(),notification1);
+                }
+
+            }
+        });
+    }
+
+
+    public void startNotificationTask(Context context, Notification no) {
+        PeriodicWorkRequest mNotificationWorkRequest;
+
+        WorkManager workManager = WorkManager.getInstance(context);
+
+        Data data = new Data.Builder()
+                .putString("naslov", no.getNaslov())
+                .putString("text", no.getText())
+                .putInt("id", no.getId())
+                .build();
+
+        //NOTIFICATION TASK
+        mNotificationWorkRequest = new PeriodicWorkRequest.Builder(NotificationWorker.class, 15, TimeUnit.MINUTES, 5, TimeUnit.MINUTES)
+                .addTag("NotificationWorker")
+                .setInputData(data)
+                .build();
+
+        // Može se koristiti kao prikaz samo jedne obavijesti
+//        workManager.enqueueUniquePeriodicWork("NotificationWorker", ExistingPeriodicWorkPolicy.REPLACE, mNotificationWorkRequest);
+        workManager.enqueue(mNotificationWorkRequest);
     }
 
     private void RecyclerViewBind() {
