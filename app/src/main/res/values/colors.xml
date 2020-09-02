@@ -7,5 +7,6 @@
     <color name="colorRecyclerBackground">#FFE4E4E4</color>
     <color name="white">#FFFFFF</color>
     <color name="link">#FF1B82C1</color>
+    <color name="transparent_white">#B5FDFDFD</color>
 
 </resources>

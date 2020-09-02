@@ -16,6 +16,7 @@ import com.example.vsmtiinfo.Model.Godina;
 import com.example.vsmtiinfo.Model.News;
 import com.example.vsmtiinfo.Model.NewsDetail;
 import com.example.vsmtiinfo.Model.Notification;
+import com.example.vsmtiinfo.Model.StudijskiProgram;
 import com.example.vsmtiinfo.Model.StudijskiProgrami;
 import com.example.vsmtiinfo.WaitForJson;
 import com.example.vsmtiinfo.WaitForNews;
@@ -112,6 +113,7 @@ public class MyViewModel extends AndroidViewModel {
                 if (!response.isSuccessful()) {
                     return;
                 }
+                Gson gson = new Gson();
                 StudijskiProgrami studijskiProgrami= response.body();
                 waitForJson.GetStudijskiProgrami(studijskiProgrami);
             }
@@ -142,7 +144,7 @@ public class MyViewModel extends AndroidViewModel {
                     return;
                 }
                 ArrayList<Notification>lNotifications = new ArrayList<>();
-               lNotifications= response.body();
+                lNotifications= response.body();
                 waitForNotificationInterface.GetNotifications(lNotifications);
             }
 

@@ -337,7 +337,19 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            tools:context=".Activity.Kontakt" />
+                            tools:context=".Activity.Kontakt" >
+
+                            <ImageButton
+                                android:id="@+id/openDirections"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|top"
+                                android:src="@drawable/ic_baseline_directions_24"
+                                android:layout_margin="10dp"
+                                android:background="@color/transparent_white"
+                                android:contentDescription="directions" />
+
+                        </fragment>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
