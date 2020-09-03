@@ -6,12 +6,14 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 
+import com.example.vsmtiinfo.Data.DokumentiRetrofitApi;
 import com.example.vsmtiinfo.Data.GetNewsData;
 import com.example.vsmtiinfo.Data.GetSelectedNewsDetails;
 import com.example.vsmtiinfo.Data.JsonRetrofitApi;
 import com.example.vsmtiinfo.Data.NotificationRetrofitApi;
 import com.example.vsmtiinfo.GetNewsDetailInterface;
 import com.example.vsmtiinfo.GetNewsInterface;
+import com.example.vsmtiinfo.Model.Dokument;
 import com.example.vsmtiinfo.Model.Godina;
 import com.example.vsmtiinfo.Model.News;
 import com.example.vsmtiinfo.Model.NewsDetail;
@@ -41,6 +43,7 @@ public class MyViewModel extends AndroidViewModel {
     public ArrayList<News>lNewsVM = new ArrayList<>();
     private WaitForJson waitForJson;
     private WaitForNotificationInterface waitForNotificationInterface;
+    private WaitForDokumentiInterface waitForDokumentiInterface;
 
 
     private ArrayList<Godina>lGodina = new ArrayList<>();
@@ -167,7 +170,45 @@ public class MyViewModel extends AndroidViewModel {
         RetrofitNotifications();
     }
 
+    public void RetrofitDokumenti()
+    {
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://hub.vsmti.hr/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        DokumentiRetrofitApi dokumentiRetrofitApi = retrofit.create(DokumentiRetrofitApi.class);
+
+        Call<ArrayList<Dokument>> call = dokumentiRetrofitApi.GetDokumenti();
+
+        call.enqueue(new Callback<ArrayList<Dokument>>() {
+            @Override
+            public void onResponse(Call<ArrayList<Dokument>> call, Response<ArrayList<Dokument>> response) {
+                if (!response.isSuccessful()) {
+                    return;
+                }
+
+                waitForDokumentiInterface.GetDokumenti(response.body());
+            }
+
+            @Override
+            public void onFailure(Call<ArrayList<Dokument>> call, Throwable t) {
+                Log.d(TAG, "onFailure: error " + t.toString());
+            }
+        });
 
 
+    }
+
+
+    public interface WaitForDokumentiInterface{
+        void GetDokumenti(ArrayList<Dokument> lDokumenti);
+    }
+
+
+    public void SetOnDokumentiFinishListener(WaitForDokumentiInterface waitForDokumentiInterface)
+    {
+        this.waitForDokumentiInterface = waitForDokumentiInterface;
+        RetrofitDokumenti();
+    }
 
 }

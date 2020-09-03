@@ -46,6 +46,7 @@ import com.example.vsmtiinfo.Adapter.NewsRecyclerViewAdapter;
 import com.example.vsmtiinfo.Adapter.PocetniActivityRecyclerViewAdapter;
 import com.example.vsmtiinfo.Fragment.NewsFragment;
 import com.example.vsmtiinfo.Fragment.StudijskiProgramiFragment;
+import com.example.vsmtiinfo.Model.Dokument;
 import com.example.vsmtiinfo.Model.Linkovi;
 import com.example.vsmtiinfo.Model.News;
 import com.example.vsmtiinfo.Model.Notification;
@@ -86,6 +87,7 @@ public class PocetniActivity extends AppCompatActivity {
         NavigationViewSetup();
         RecyclerViewBind();
         GetNotifications();
+        GetDokumenti();
     }
 
     private void GetNotifications()
@@ -109,6 +111,15 @@ public class PocetniActivity extends AppCompatActivity {
         });
     }
 
+    private void GetDokumenti()
+    {
+        viewModel.SetOnDokumentiFinishListener(new MyViewModel.WaitForDokumentiInterface() {
+            @Override
+            public void GetDokumenti(ArrayList<Dokument> lDokumenti) {
+                Log.d(TAG, "GetDokumenti: " + lDokumenti.size());
+            }
+        });
+    }
 
     public void startNotificationTask(Context context, Notification no) {
         PeriodicWorkRequest mNotificationWorkRequest;
@@ -135,6 +146,7 @@ public class PocetniActivity extends AppCompatActivity {
     private void RecyclerViewBind() {
         lLinkovi.add(new Linkovi("VSMTI vijesti", "null", R.drawable.ic_news));
         lLinkovi.add(new Linkovi("Studijski programi", "null", R.drawable.ic_sprogrami));
+        lLinkovi.add(new Linkovi("Dokumenti", "null",R.drawable.ic_documents));
         lLinkovi.add(new Linkovi("Studom", "http://studom.vsmti.hr",R.drawable.circle_croppedstudom));
         lLinkovi.add(new Linkovi("Računarstvo", "http://racunarstvo.vsmti.hr", R.drawable.circle_croppedrac));
         lLinkovi.add(new Linkovi("Loomen", "http://loomen.vsmti.hr", R.drawable.circle_croppedloomen));
@@ -146,7 +158,7 @@ public class PocetniActivity extends AppCompatActivity {
 
        for (Linkovi linkovi : lLinkovi)
        {
-           Log.d(TAG, "RecyclerViewBind: " + linkovi.getImageName() + "   " + linkovi.getImg()) ;
+           Log.d(TAG, "RecyclerViewBind: " + linkovi.getImageName() + "   " + linkovi.getImg());
        }
 
         recyclerView = findViewById(R.id.recyclerPocetni);
@@ -340,16 +352,22 @@ public class PocetniActivity extends AppCompatActivity {
             @Override
             public void StartActivity(Linkovi linkovi) {
                 if(linkovi.getImageName().equals("VSMTI vijesti"))
-                    {
-                        Intent intent = new Intent(PocetniActivity.this, MainActivity.class);
-                        startActivity(intent);
-                    }
-                    else
-                    {
-                        Intent intent = new Intent(PocetniActivity.this, MainActivity.class);
-                        intent.putExtra("fragment", "studijski programi");
-                        startActivity(intent);
-                    }
+                {
+                    Intent intent = new Intent(PocetniActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
+                else if(linkovi.getImageName().equals("Studijski programi"))
+                {
+                    Intent intent = new Intent(PocetniActivity.this, MainActivity.class);
+                    intent.putExtra("fragment", "studijski programi");
+                    startActivity(intent);
+                }
+                else if(linkovi.getImageName().equals("Dokumenti"))
+                {
+                    Intent intent = new Intent(PocetniActivity.this, MainActivity.class);
+                    intent.putExtra("fragment", "dokumenti");
+                    startActivity(intent);
+                }
             }
         });
     }

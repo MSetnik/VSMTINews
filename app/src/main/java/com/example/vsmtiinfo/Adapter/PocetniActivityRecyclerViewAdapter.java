@@ -40,7 +40,6 @@ public class PocetniActivityRecyclerViewAdapter extends RecyclerView.Adapter {
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-//        View itemView = layoutInflater.inflate(R.layout.pocetna_recycler_cardview,parent, false);
         View view;
         if (viewType == 0)
         {
@@ -50,8 +49,6 @@ public class PocetniActivityRecyclerViewAdapter extends RecyclerView.Adapter {
         view = layoutInflater.inflate(R.layout.pocetna_recycler_cardview,parent,false);
         return new korisniLinkoviVH(view);
 
-//        PocetniActivityRecyclerViewAdapter.PocetniVH holder = new PocetniActivityRecyclerViewAdapter.PocetniVH(itemView);
-//        return holder;
     }
 
     @Override
@@ -60,6 +57,7 @@ public class PocetniActivityRecyclerViewAdapter extends RecyclerView.Adapter {
 
         if (linkovi.getUrl().contains("null"))
         {
+
             PocetniVH pocetniVH = (PocetniVH) holder;
             pocetniVH.image1.setImageResource(linkovi.getImg());
             pocetniVH.textView.setText(linkovi.getImageName());
@@ -89,44 +87,6 @@ public class PocetniActivityRecyclerViewAdapter extends RecyclerView.Adapter {
         return 1;
     }
 
-    /* @NonNull
-    @Override
-    public PocetniVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.pocetna_recycler_cardview,parent, false);
-        PocetniActivityRecyclerViewAdapter.PocetniVH holder = new PocetniActivityRecyclerViewAdapter.PocetniVH(itemView);
-        return holder;
-    }
-
-    @Override
-    public void onBindViewHolder(@NonNull PocetniVH holder, int position) {
-        Linkovi linkovi = lLinkovi.get(position);
-
-        Picasso.get().load(linkovi.getImg()).into(holder.image1);
-
-//        holder.image1.setImageResource(linkovi.getImg());
-    }
-
-    @Override
-    public int getItemCount() {
-        return lLinkovi.size();
-    }
-
-    public class PocetniVH extends RecyclerView.ViewHolder {
-        ImageView image1;
-        public PocetniVH(@NonNull View itemView) {
-            super(itemView);
-            image1 = itemView.findViewById(R.id.imageView1);
-
-            image1.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    int position = getAdapterPosition();
-                    openLinkInterface.OpenWebPage(lLinkovi.get(position));
-                }
-            });
-        }
-    }*/
-
     public class PocetniVH extends RecyclerView.ViewHolder {
 
         ImageView image1;
@@ -145,16 +105,6 @@ public class PocetniActivityRecyclerViewAdapter extends RecyclerView.Adapter {
                     int position = getAdapterPosition();
                     String cardClicked = lLinkovi.get(position).getImageName();
                     startClickedcardActivityInterface.StartActivity(lLinkovi.get(position));
-//                    if(cardClicked.toLowerCase().contains("VSMTI vijesti"))
-//                    {
-//                        Intent intent = new Intent(ctx, MainActivity.class);
-//                        ctx.startActivity(intent);
-//                    }
-//                    else
-//                    {
-////                        Intent intent = new Intent(ctx, MainActivity.class);
-////                        getSupportFragmentManager().beginTransaction().replace(R.id.myFragment, new StudijskiProgramiFragment()).commit();
-//                    }
                 }
             });
         }

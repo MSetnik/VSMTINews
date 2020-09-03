@@ -30,8 +30,10 @@ import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.vsmtiinfo.Adapter.NewsRecyclerViewAdapter;
+import com.example.vsmtiinfo.Fragment.DokumentFragment;
 import com.example.vsmtiinfo.Fragment.NewsFragment;
 import com.example.vsmtiinfo.Fragment.StudijskiProgramiFragment;
+import com.example.vsmtiinfo.Model.Dokument;
 import com.example.vsmtiinfo.Model.News;
 import com.example.vsmtiinfo.Model.NewsDetail;
 import com.example.vsmtiinfo.Model.StudijskiProgrami;
@@ -158,6 +160,9 @@ public class MainActivity extends AppCompatActivity  {
                         clickedItemID = R.id.virtualnaSetnja;
                         break;
 
+                    default:
+                        clickedItemID = 0;
+                        break;
 
                 }
 
@@ -217,6 +222,10 @@ public class MainActivity extends AppCompatActivity  {
                         Intent intentVS = new Intent(MainActivity.this, ProstorSkoleActivity.class);
                         intentVS.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intentVS);
+                        break;
+
+                    default:
+                        navigationView.setCheckedItem(0);
                         break;
                 }
             }
@@ -308,17 +317,53 @@ public class MainActivity extends AppCompatActivity  {
     {
         if (getIntent().getExtras() != null)
         {
-            LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimation);
-            lottieAnimationView.cancelAnimation();
-            lottieAnimationView.setVisibility(View.GONE);
+            if(getIntent().getExtras().toString().equals("studijski programi"))
+            {
+                LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimation);
+                lottieAnimationView.cancelAnimation();
+                lottieAnimationView.setVisibility(View.GONE);
+                getSupportFragmentManager().beginTransaction().replace(R.id.myFragment, new StudijskiProgramiFragment()).commit();
+            }
+            else
+            {
+                LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimation);
+                lottieAnimationView.cancelAnimation();
+                lottieAnimationView.setVisibility(View.GONE);
+                viewModel.SetOnDokumentiFinishListener(new MyViewModel.WaitForDokumentiInterface() {
+                    @Override
+                    public void GetDokumenti(ArrayList<Dokument> lDokumenti) {
+                        DokumentFragment dokumentFragment = new DokumentFragment();
 
-            getSupportFragmentManager().beginTransaction().replace(R.id.myFragment, new StudijskiProgramiFragment()).commit();
+                        Bundle bundle = new Bundle();
+                        bundle.putParcelableArrayList("lDokumenti",  lDokumenti);
+                        dokumentFragment.setArguments(bundle);
 
+//                        FragmentManager fm = getSupportFragmentManager();
+//                        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//                        fragmentTransaction.replace(R.id.myFragment,dokumentFragment);
+
+                        getSupportFragmentManager().beginTransaction().replace(R.id.myFragment, dokumentFragment).commit();
+                        for (Dokument dokument : lDokumenti){
+                            Log.d(TAG, "GetDokumenti: " + dokument.getNaslov());
+                        }
+//                        if(!fm.isDestroyed())
+//                        {
+//                            fragmentTransaction.commit();
+//                        }
+
+                    }
+                });
+
+
+//                LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimation);
+//                lottieAnimationView.cancelAnimation();
+//                lottieAnimationView.setVisibility(View.GONE);
+//                getSupportFragmentManager().beginTransaction().replace(R.id.myFragment, new DokumentFragment()).commit();
+            }
         }
         else
         {
             LoadNews();
-
         }
 
     }
