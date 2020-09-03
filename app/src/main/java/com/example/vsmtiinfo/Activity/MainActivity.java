@@ -326,6 +326,7 @@ public class MainActivity extends AppCompatActivity  {
             }
             else
             {
+                toolbar.setTitle("Dokumenti");
                 LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimation);
                 lottieAnimationView.cancelAnimation();
                 lottieAnimationView.setVisibility(View.GONE);
