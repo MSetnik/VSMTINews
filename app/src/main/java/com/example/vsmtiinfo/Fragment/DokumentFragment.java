@@ -52,10 +52,7 @@ public class DokumentFragment extends Fragment {
     private ArrayList<Dokument>lDoc = new ArrayList<>();
     private DokumentRecyclerAdapter recyclerAdapter;
 
-    private int READ_STORAGE_PERMISSION_CODE=1;
     private int WRITE_STORAGE_PERMISSION_CODE=1;
-    private ProgressDialog pDialog;
-    public static final int progress_bar_type = 0;
 
     private DrawerLayout drawer;
     private NavigationView navigationView;
@@ -84,7 +81,7 @@ public class DokumentFragment extends Fragment {
 
     private ArrayList<Dokument> GetDokumenti()
     {
-        ArrayList<Dokument> lDokumenti = new ArrayList<>();
+        ArrayList<Dokument> lDokumenti;
         Bundle bundle = getArguments();
 
         lDokumenti = bundle.getParcelableArrayList("lDokumenti");

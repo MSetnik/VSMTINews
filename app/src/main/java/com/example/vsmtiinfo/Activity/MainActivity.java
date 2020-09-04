@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -113,7 +114,6 @@ public class MainActivity extends AppCompatActivity  {
     @Override
     protected void onResume() {
         super.onResume();
-
         navigationView.setCheckedItem(R.id.vijesti);
     }
 
@@ -317,7 +317,7 @@ public class MainActivity extends AppCompatActivity  {
     {
         if (getIntent().getExtras() != null)
         {
-            if(getIntent().getExtras().toString().equals("studijski programi"))
+            if(getIntent().getStringExtra("fragment").equals("studijski programi"))
             {
                 LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimation);
                 lottieAnimationView.cancelAnimation();
@@ -330,6 +330,7 @@ public class MainActivity extends AppCompatActivity  {
                 LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimation);
                 lottieAnimationView.cancelAnimation();
                 lottieAnimationView.setVisibility(View.GONE);
+
                 viewModel.SetOnDokumentiFinishListener(new MyViewModel.WaitForDokumentiInterface() {
                     @Override
                     public void GetDokumenti(ArrayList<Dokument> lDokumenti) {
@@ -344,13 +345,7 @@ public class MainActivity extends AppCompatActivity  {
 //                        fragmentTransaction.replace(R.id.myFragment,dokumentFragment);
 
                         getSupportFragmentManager().beginTransaction().replace(R.id.myFragment, dokumentFragment).commit();
-                        for (Dokument dokument : lDokumenti){
-                            Log.d(TAG, "GetDokumenti: " + dokument.getNaslov());
-                        }
-//                        if(!fm.isDestroyed())
-//                        {
-//                            fragmentTransaction.commit();
-//                        }
+
 
                     }
                 });

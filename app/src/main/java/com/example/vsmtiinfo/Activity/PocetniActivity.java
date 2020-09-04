@@ -87,7 +87,6 @@ public class PocetniActivity extends AppCompatActivity {
         NavigationViewSetup();
         RecyclerViewBind();
         GetNotifications();
-        GetDokumenti();
     }
 
     private void GetNotifications()
@@ -107,16 +106,6 @@ public class PocetniActivity extends AppCompatActivity {
                     startNotificationTask(getApplicationContext(),notification1);
                 }
 
-            }
-        });
-    }
-
-    private void GetDokumenti()
-    {
-        viewModel.SetOnDokumentiFinishListener(new MyViewModel.WaitForDokumentiInterface() {
-            @Override
-            public void GetDokumenti(ArrayList<Dokument> lDokumenti) {
-                Log.d(TAG, "GetDokumenti: " + lDokumenti.size());
             }
         });
     }
