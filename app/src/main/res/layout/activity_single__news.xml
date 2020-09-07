@@ -48,7 +48,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <com.google.android.material.card.MaterialCardView
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/newsHeader"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-                    </com.google.android.material.card.MaterialCardView>
+                    </androidx.cardview.widget.CardView>
 
 
                     <TextView
